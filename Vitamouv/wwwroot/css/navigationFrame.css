@@ -1,0 +1,26 @@
+﻿.navFrame {
+    padding: 2rem;
+    height: 40vh;
+    overflow: visible;
+    border: 1px solid red;
+}
+
+.navFrame__logo {
+    padding: 2rem;
+    height: 200vh;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    bottom: 200%;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+.clickableRect:hover {
+    cursor: pointer;
+    stroke: #A50E58;
+    stroke-width: 1;
+    filter: drop-shadow(5px 5px 5px #A50E58);
+}
+

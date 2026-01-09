@@ -1,0 +1,11 @@
+﻿h1 {
+    color: hsl(331 84% 35%);
+}
+
+.presentation {
+    margin: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+    z-index: 3;
+    border: 1px solid grey;
+}
