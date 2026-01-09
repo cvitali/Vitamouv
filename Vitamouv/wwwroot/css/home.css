@@ -1,11 +1,28 @@
-﻿h1 {
+﻿.main__home {
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+}
+
+h1 {
     color: hsl(331 84% 35%);
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
 }
 
 .presentation {
-    margin: 2rem;
-    font-size: 1.8rem;
-    position: relative;
+    margin: 2rem 0 8rem 0 ;
+    font-size: 1.5em;
+    min-width: 100%;
     z-index: 3;
-    border: 1px solid grey;
+}
+
+.presentation__text2 {
+    align-self: start;
+    text-align: left;
+    font-size: 1.5em;
+    border: 1px solid green;
+    margin: 5rem 2rem 0 2rem;
+
+
 }
