@@ -1,0 +1,11 @@
+﻿.socialNetworksSection {
+}
+
+.socialNetworksSection__Links {
+    display: flex;
+    justify-content: center;
+}
+
+.socialNetworkLink:hover {
+    transform: translateY(-5px);
+}

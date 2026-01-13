@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Accueil";
 }
 
 
@@ -16,13 +16,24 @@
         <p>
     </div>
     <div class="importedClickableLogo">
-        @await Html.PartialAsync("_clickableLogo")
+        @await Html.PartialAsync("_ClickableLogoPartial")
     </div>
     <div class="presentation__text2">
         <p>
-            Depuis sa création en Janvier 2023, Vita’MOUV a développé de nombreux parteneriats et travaille déjà avec pas moins d’une quarantaine structures en France et au Luxembourg: crèches, associations, communautés de communes, foyers, périscolaires, etc...
+            Depuis sa création en Janvier 2023, Vita’MOUV a développé de nombreux parteneriats et travaille déjà avec pas moins d’une quarantaine de structures en France et au Luxembourg: crèches, associations, communautés de communes, foyers, périscolaires, etc...
             <br />
             Alors, n’attendez plus: vous aussi rejoignez le mouvement, laissez le sport venir à vous !
         </p>
+    </div>
+    <div class="socialNetworksandContact">
+        @await Html.PartialAsync("_SocialNetworks&ContactPartial")
+        <div class="contact">
+            <h5 class="mb-3"">ou contactez-moi directement:</h5>
+            <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
+                <div class="btn btn-outline-burgundy">
+                    Prendre contact
+                </div>
+            </a>
+        </div>
     </div>
 </div>

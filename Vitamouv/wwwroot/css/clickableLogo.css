@@ -2,7 +2,6 @@
     height: 60vh;
     max-width: 50vw;
     overflow: visible;
-    border: 2px solid red; 
     position: relative;
     top: -20%;
 }
@@ -29,9 +28,10 @@
 }
 .clickableRect:hover {
     cursor: pointer;
-    stroke: #A50E58;
-    stroke-width: 1;
-    filter: drop-shadow(5px 5px 5px #A50E58);
+    /*stroke: #A50E58; // à supprimer si non utilisé
+    stroke-width: 1;*/
+    /*filter: drop-shadow(5px 5px 5px #A50E58);*/
+    filter: brightness(115%);
 }
 
 

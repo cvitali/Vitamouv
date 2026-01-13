@@ -13,22 +13,25 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Vitamouv.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/reset.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/navigationFrame.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/clickableLogo.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/socialNetworks&Contact.css" asp-append-version="true" />
 </head>
 <body class="text-center">
     <header>
         <div class="logo container-fluid">
             <img class="logo__draw" src="~/assets/images/logoFullBlack.svg" />   
         </div>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Vitamouv</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+        <nav class="navbar navbar-dark navbar-expand-sm navbar-toggleable-sm ">
+            <div class="container-fluid bg-burgundy">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img clas="navbar-brand__img" src="~/assets/images/silhouetteBlanc.png" alt="Vita'Mouv" height="24"/>
+                </a>
+                <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="full-width navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Accueil</a>
@@ -53,6 +56,7 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2025 - Vitamouv - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

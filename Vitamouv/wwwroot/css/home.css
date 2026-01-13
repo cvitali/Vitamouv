@@ -12,7 +12,7 @@ h1 {
 
 .presentation {
     margin: 2rem 0 8rem 0 ;
-    font-size: 1.5em;
+    font-size: 1.2em;
     min-width: 100%;
     z-index: 3;
 }
@@ -20,9 +20,23 @@ h1 {
 .presentation__text2 {
     align-self: start;
     text-align: left;
-    font-size: 1.5em;
-    border: 1px solid green;
-    margin: 5rem 2rem 0 2rem;
-
-
+    font-size: 1.2em;
+    margin: 5rem 2rem 5rem 2rem;
 }
+
+.socialNetworksandContact {
+    border: 1px solid lightgray;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 10px lightgray;
+    padding: 1.2rem;
+}
+
+    .socialNetworksandContact:hover {
+        box-shadow: 5px 5px 30px lightgray;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+

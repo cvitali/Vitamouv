@@ -8,9 +8,26 @@ html {
   }
 }
 
+@media (max-width: 450) {
+    html {
+        font-size: 10px;
+    }
+}
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.bg-burgundy {
+    background-color:hsl(331 84% 35%) ;
+}
+
+.full-width {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 html {
@@ -44,10 +61,31 @@ body {
     max-width: 100vw;
 }
 
-.navbar {
+.navbar-nav {
     background-color: hsl(331 84% 35%);
     color: white;
+    margin: 0 0 0 0;
     max-width: 100vw;
+    
+}
+
+.navbar {
+    border-top: 1px solid hsl(331 84% 35%);
+    border-bottom: 1px solid hsl(331 84% 35%);
+    font-size: 1rem;
+    align-content: center;
+}
+
+.navbar-brand {
+    color: white;
+    align-items: center;
+    font-size:1rem;
+    align-self: baseline;
+    padding-left: 2rem
+}
+
+.nav-item:hover {
+    font-weight: bold;
 }
 
 .main {
@@ -59,7 +97,7 @@ body {
 .footer {
     position: absolute;
     bottom: -50%;
-    transform: translateY(80%);
+    transform: translateY(50%);
     width: 100%;
     height: 80%;
     white-space: nowrap;
@@ -71,6 +109,17 @@ body {
 .pointer {
     cursor: pointer;
 }
+
+.btn-outline-burgundy {
+    border: 1px solid hsl(331 84% 35%);
+    color: hsl(331 84% 35%);
+    font-weight:500;
+}
+
+    .btn-outline-burgundy:hover {
+        background-color: hsl(331 84% 35%);
+        color: white;
+    }
 
 
 
