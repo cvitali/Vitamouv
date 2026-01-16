@@ -24,25 +24,47 @@ html {
     background-color:hsl(331 84% 35%) ;
 }
 
-.bg-blue {
-    background-color: hsl(191 70% 80%);
-}
-
-.bg-lightBlue {
-    background-color: hsl(191 70% 80% / 19%);
+.bg-lightBlueGradient {
+    background: linear-gradient( hsl(191 70% 80% / 20%), hsl(191 70% 80%));
 }
 
 .bg-lighterBlue {
-    background-color: hsl(191 70% 80% / 10%);
+    background-color: hsl(191 70% 80% / 20%);
 }
 
-.full-width {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+.bg-lightYellowGradient {
+    background: linear-gradient( hsl(48 75% 83% /20% ), hsl(48 75% 83% ));
 }
+
+.bg-lightYellow {
+    background-color: hsl(48 75% 83% / 20% );
+}
+
+.bg-lightPurpleGradient {
+    background: linear-gradient( hsl(268 70% 81% / 20%), hsl(268 70% 81%));
+}
+
+.bg-lighterPurple {
+    background-color: hsl(268 70% 81% / 20%);
+}
+
+.bg-lightPinkGradient {
+    background: linear-gradient( hsl(313 82% 82% /20% ), hsl(313 82% 82%));
+}
+
+.bg-lighterPink {
+    background-color: hsl(313 82% 82% /20% );
+}
+
+
+    /*------------------------------------------------------------------------------*/
+    .full-width {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
 html {
   position: relative;
@@ -153,7 +175,7 @@ body {
 }
 
 .btn-outline-burgundy {
-    border: 1px solid hsl(331 84% 35%);
+    border: 5px double hsl(331 84% 35%);
     color: hsl(331 84% 35%);
     font-weight:500;
 }
@@ -170,12 +192,26 @@ body {
     margin: 2rem;
 }
 
-.btn-outline-blue:hover {
+    .btn-blue:hover {
     
-    border: 1px solid hsl(191 70% 80%);
-    background-color: white;
-    color: hsl(191 70% 80%);
+        border: 1px solid hsl(191 70% 80%);
+        background-color: white;
+        color: hsl(191 70% 80%);
+    }
+
+
+.btn-yellow {
+    background-color: hsl(48 75% 83%);
+    color: white;
+    font-weight: 500;
+    margin: 2rem;
 }
+
+    .btn-yellow:hover {
+        border: 1px solid hsl(48 75% 83%);
+        background-color: white;
+        color: hsl(48 75% 83%);
+    }
 
 
 

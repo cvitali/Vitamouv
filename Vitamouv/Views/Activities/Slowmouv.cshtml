@@ -2,26 +2,57 @@
     ViewData["Title"] = "Slow'MOUV";
 }
 
-<div class="main__activity">
-    <section class="mb-5 d-flex justify-content-center m-lg-5">
-        <div class="presentation presentation__activity container-fluid text-center">
-            <div class="presentation__background">
-                <img class="presentation__img img-fluid" src="~/assets/images/minimouv.png" alt="enfants" />
-                <div class="presentation__text container-fluid">
-                    <h2>Slow’MOUV</h2>
-                    <h3> Bouger autrement, en douceur et avec plaisir</h3>
-                </div>
-            </div>
+<div class="container w-100">
+    <div class="main__activity">
+        <div class="main__background bg-lighterPurple">
+            <section class="mb-5 d-flex justify-content-center m-lg-5">
+                <div class="presentation presentation__activity container-fluid text-center">
+                    <div class="presentation__background">
+                        <img class="presentation__img img-fluid" src="~/assets/images/slowmouv.png" alt="gym douce" />
+                        <div class="presentation__text container-fluid">
+                            <h2>Slow’MOUV</h2>
+                            <h3> Bouger autrement, en douceur et avec plaisir</h3>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+            <section class="activity bg-lightPurpleGradient">
+                <h3 class="activity__title">Slow'MOUV</h3>
+                <p class="activity__description">
+                    Les séances Slow’MOUV sont conçues pour s’adapter à chaque pratiquant,  quel que soit son âge ou sa condition physique. 
+                    <br />
+                    Grâce à mes formations  spécialisées en sport santé, gym seniors et périnatalité, je propose un accompagnement personnalisé, sécurisé et bienveillant.
+                    <br/>
+                    Chaque séance associe mouvements doux, travail cardio progressif et renforcement des muscles locomoteurs afin d'améliorer la mobilité, l’équilibre et le bien-être au quotidien.
+                    <br />
+                    <br />
+                    Slow’MOUV, c’est aussi un moment de partage et de bonne humeur favorisant la confiance en soi et le lien social.
+                    <br />
+                    Les séances peuvent être organisées en association, EHPAD, résidence seniors ou centre de périnatalité, en petits groupes ou en séances adaptées aux besoins de votre structure.
+                    <br />
+                    <br />
+                    Je serais ravie de vous présenter mon concept et de répondre à toutes vos questions lors d’un rendez-vous téléphonique ou dans vos locaux.
+                </p>
+                <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
+                    <div class="btn btn-outline-burgundy mt-3">
+                        Prendre contact
+                    </div>
+                </a>
+            </section>
         </div>
-    </section>
-    <section class="activity bg-lightBlue">
-        <h3 class="activity__title">School'MOUV</h3>
-        <p class="activity__description">
-            Les séances Slow’MOUV sont conçues pour s’adapter à chaque pratiquant,  quel que soit son âge ou sa condition physique. Grâce à mes formations  spécialisées en sport santé, gym seniors et périnatalité, je propose un accompagnement personnalisé, sécurisé et bienveillant.
-            Chaque séance associe mouvements doux, travail cardio progressif et renforcement des muscles locomoteurs, pour améliorer la mobilité, l’équilibre et le bien-être au quotidien.
-            Slow’MOUV, c’est aussi un moment de partage et de bonne humeur, favorisant la confiance en soi et le lien social.
-            Les séances peuvent être organisées en association, EHPAD, résidence seniors ou centre de périnatalité, en petits groupes ou en séances adaptées aux besoins de votre structure.
-        </p>
-        <div class="btn rounded-pill btn-outline-blue">Prendre contact</div>
-    </section>
+        <div class="importedClickableLogo">
+            @await Html.PartialAsync("_ClickableLogoPartial")
+        </div>
+    </div>
+    <div class="socialNetworksandContact socialNetworksandContact__activity">
+        @await Html.PartialAsync("_SocialNetworks&ContactPartial")
+        <div class="contact">
+            <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
+            <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
+                <div class="btn btn-outline-burgundy">
+                    Prendre contact
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
