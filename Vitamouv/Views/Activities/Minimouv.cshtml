@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Minimouv";
+}
+
+<div class="container w-100">
+    <div class="main__activity">
+        <div class="main__background bg-lighterBlue">
+            <section class="mb-5 d-flex justify-content-center m-lg-5">
+                <div class="presentation presentation__activity container-fluid text-center">
+                    <div class="presentation__background">
+                        <img class="presentation__img img-fluid" src="~/assets/images/minimouv.png" alt="enfants" />
+                        <div class="presentation__text container-fluid">
+                            <h2>Mini’MOUV</h2>
+                            <h3>Le mouvement au coeur de l’éveil</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="activity bg-lightBlue">
+                <h3 class="activity__title">Mini'MOUV</h3>
+                <p class="activity__description">
+                    Un concept de Baby Gym ludique et bienveillant, pensé pour stimuler le développement moteur et le bien-être des enfants de 6 mois à 5 ans.
+                    <br />
+                    Avec Baby'MOUV je vous propose:
+                    <ul class="list">
+                        <li>Des activités structurées et stimulantes, adaptées à chaque âge et chaque enfant. </li>
+                        <li>Des séances de 45mn à 1h00 respectant leur rythme et leur sécurité.</li>
+                        <li>Une prestation clé en main incluant l'installation et le rangement du matériel</li>
+                        <li>Je me déplace avec mon matériel personnel et utilise également celui disponible sur place</li>
+                    </ul>
+                    <br/>
+                    Mini’MOUV transforme le temps d’activité physique en moment de jeu et de découverte tout en accompagnant les professionnels dans la mise en place d’activités adaptées.
+                    <br />
+                    Je serais ravie de vous présenter mon concept et de répondre à toutes vos questions lors d’un rendez-vous téléphonique ou dans vos locaux.
+                </p>
+                <div class="btn rounded-pill btn-blue pointer">Prendre contact</div>
+            </section>
+           
+        </div>
+        <div class="importedClickableLogo">
+            @await Html.PartialAsync("_ClickableLogoPartial")
+        </div>
+    </div>
+    
+    <div class="socialNetworksandContact socialNetworksandContact__activity">
+        @await Html.PartialAsync("_SocialNetworks&ContactPartial")
+        <div class="contact">
+            <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
+            <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
+                <div class="btn btn-outline-burgundy">
+                    Prendre contact
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

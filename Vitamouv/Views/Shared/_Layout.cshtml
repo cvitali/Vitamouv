@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="~/css/clickableLogo.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/socialNetworks&Contact.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/about.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/activity.css" asp-append-version="true" />
 </head>
 <body class="text-center">
     <header>
@@ -39,21 +41,30 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="About">A propos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Services">Prestations</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Prestations
+                            </a>
+                            <div class="dropdown-menu bg-burgundy" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="Minimouv">Mini'MOUV: gym de 6 mois à 5 ans'</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="Schoolmouv">School'MOUV: gym enfants, à partir de 6 ans</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="Slowmouv">Slow'MOUV: gym douce, sport santé et périnatalité</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="Dansemouv">Danse'MOUV: chorégraphies, enchainements, expression corporelle</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Activities" asp-action="Eventmouv">Event'MOUV: création de spectacles, ouvertures de bals de mariages, anniversaires sportifs</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="main container-fluid">
-        <main role="main" class="pb-3">
+    <div class="main">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted">
         <div class="container">
             &copy; 2025 - Vitamouv - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>

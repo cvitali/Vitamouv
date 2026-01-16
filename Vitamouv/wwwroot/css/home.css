@@ -1,6 +1,10 @@
 ﻿.main__home {
+    display: flex;
+    justify-items: baseline;
+    justify-content: center;
+    align-items: center;
     align-self: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -8,35 +12,23 @@ h1 {
     color: hsl(331 84% 35%);
     font-weight: 700;
     margin: 1rem 0 1rem 0;
+    max-width: 90%;
 }
 
-.presentation {
-    margin: 2rem 0 8rem 0 ;
+.hero {
+    margin: 2rem auto 8rem auto;
     font-size: 1.2em;
-    min-width: 100%;
+    max-width: 80vw;
     z-index: 3;
 }
 
-.presentation__text2 {
+.hero__text2 {
     align-self: start;
     text-align: left;
     font-size: 1.2em;
-    margin: 5rem 2rem 5rem 2rem;
+    margin: 5rem auto 5rem auto;
+    max-width: 85%;
 }
 
-.socialNetworksandContact {
-    border: 1px solid lightgray;
-    border-radius: 5px 5px;
-    box-shadow: 5px 5px 10px lightgray;
-    padding: 1.2rem;
-}
 
-    .socialNetworksandContact:hover {
-        box-shadow: 5px 5px 30px lightgray;
-    }
-
-    .contact {
-        display: flex;
-        flex-direction: column;
-    }
 

@@ -1,0 +1,38 @@
+﻿.main__activity {
+    margin: 2rem auto 12rem auto;
+    padding: 0.5rem 0 1rem 0;
+    width: 100%;
+}
+
+.main__background {
+    max-width: 100%;
+    margin-bottom: 7rem;
+    padding:1rem 0 2rem 0; 
+}
+
+.presentation__activity {
+    background-color: white; 
+}
+
+.activity {
+    margin: 3rem;
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: left;
+    line-height: 1.5rem;
+    box-shadow: 15px 15px 20px lightgray;
+}
+
+.activity__title {
+    margin: 1rem;
+}
+
+.activity__description {
+    margin-bottom: 1rem;
+}
+
+.socialNetworksandContact__activity {
+    position: relative;
+    top: 10%;
+    max-width: 100%;
+    
+}
