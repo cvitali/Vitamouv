@@ -1,5 +1,6 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
 }
 
 @media (min-width: 768px) {
@@ -56,6 +57,14 @@ html {
     background-color: hsl(313 82% 82% /20% );
 }
 
+.bg-lightGreenGradient {
+    background: linear-gradient( hsl(79 43% 75% /15% ), hsl(79 43% 75%));
+}
+
+.bg-lighterGreen {
+    background-color: hsl(79 43% 75% /15% );
+}
+
 
     /*------------------------------------------------------------------------------*/
     .full-width {
@@ -65,10 +74,6 @@ html {
         padding-left: 0;
         padding-right: 0;
     }
-
-html {
-  position: relative;
-}
 
 body {
     box-sizing: unset;
@@ -177,7 +182,8 @@ body {
 .btn-outline-burgundy {
     border: 5px double hsl(331 84% 35%);
     color: hsl(331 84% 35%);
-    font-weight:500;
+    font-weight: 500;
+    z-index: 8;
 }
 
     .btn-outline-burgundy:hover {

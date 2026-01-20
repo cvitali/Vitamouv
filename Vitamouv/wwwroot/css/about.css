@@ -44,6 +44,7 @@
     box-shadow: hsl(331 84% 35%) 1px 1px;
     position: relative;
     bottom: calc(100-1rem);
+    box-sizing: content-box;
 }
 /*-----------------------------------------------------------------*/
 .cv {

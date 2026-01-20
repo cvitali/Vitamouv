@@ -1,4 +1,5 @@
-﻿.main__activity {
+﻿/*style des pages prestations: mini'mouv, school'mouv, danse'mouv et slow'mouv + event'mouv sauf classe activity*/
+.main__activity {
     margin: 2rem auto 12rem auto;
     padding: 0.5rem 0 1rem 0;
     width: 100%;
@@ -16,18 +17,18 @@
 
 .activity {
     margin: 3rem;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 2rem;
     text-align: left;
     line-height: 1.5rem;
     box-shadow: 15px 15px 20px lightgray;
 }
 
 .activity__title {
-    margin: 1rem;
+    padding: 1rem 2rem;
 }
 
 .activity__description {
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 .socialNetworksandContact__activity {
@@ -36,3 +37,43 @@
     max-width: 100%;
     
 }
+
+/*style de la page event'mouv*/
+
+.activity__eventmouv {
+    margin: 3rem 3rem 6rem 3rem;
+    padding: 0;
+    text-align: left;
+    line-height: 1.5rem;
+    box-shadow: 15px 15px 20px lightgray;
+    box-sizing: border-box;
+}
+
+.container__eventlinks{
+    margin-top: 5rem;
+    padding: 0;
+    background-color: yellow;
+}
+
+
+.event { /*ok*/
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+    .event:hover {
+        color: black;
+        filter: brightness(115%);
+    }
+
+.event__image { /*ok*/
+    border-radius: 200px 200px 0 0;
+}
+
+.event__title {  /*ok*/
+    background-color: hsl(0 0% 85%);
+    text-align: center;
+}
+
