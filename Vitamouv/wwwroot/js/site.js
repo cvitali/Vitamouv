@@ -1,8 +1,8 @@
 ﻿//liens du logo interactif renvoyant vers les différentes disciplines
 
-let links = document.querySelectorAll(".link-js")
+const eventLinks = document.querySelectorAll(".link-js")
 
-links.forEach((link) => {
+eventLinks.forEach((link) => {
     link.addEventListener("click", () => {
         if (link.classList.contains("rect__mini"))
         {
@@ -24,5 +24,18 @@ links.forEach((link) => {
 })
 
 
-//page Eventmouv: modification du texte sous les photos au survol de la souris
+//page Eventmouv: affichage du texte caché sous les photos au survol de la souris
 
+const events = document.querySelectorAll(".event-js")
+
+events.forEach((event) => {
+    let textToShow = event.querySelector(".hiddenText-js")
+    event.addEventListener("mouseover", () => {
+
+        textToShow.classList.remove("hidden-js")
+    })
+    event.addEventListener("mouseout", () => {
+
+        textToShow.classList.add("hidden-js")
+    })
+})

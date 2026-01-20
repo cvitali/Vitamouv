@@ -72,8 +72,16 @@
     border-radius: 200px 200px 0 0;
 }
 
-.event__title {  /*ok*/
+.event__title { /*ok*/
     background-color: hsl(0 0% 85%);
     text-align: center;
 }
+
+.hidden-js {
+    display: none;   
+}
+
+    .hidden-js:hover {
+        display: block;
+    }
 

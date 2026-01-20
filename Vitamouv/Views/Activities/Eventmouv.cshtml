@@ -21,33 +21,33 @@
                 <p class="activity__description">
                     Que ce soit pour un événement publique, une ouverture de bal de mariage ou un anniversaire d’enfant, Event’MOUV vous propose une approche créative, professionnelle et bienveillante, au service d’événements uniques, pensés pour marquer les esprits.
                 </p>
-
                 <div class="container-fluid my-5">
                     <div class="row row-cols-1 row-cols-md-3 g-1 g-lg-3 gy-5">
                         <div class="col">
-                            <a class="event pointer">
+                            <a class="event pointer event-js" asp-area="" asp-controller="Events" asp-action="EventsCreation">
                                 <img class="img-fluid event__image" src="~/assets/images/creationEvent.png" alt="création d'événements"/>
-                            <p class="event__title">Création d'événement</p>
+                                <p class="event__title">Création d'événements</p>
+                                <p class="event__title hidden-js hiddenText-js">En savoir plus...</p>
                             </a>
                         </div>
                         <div class="col">
-                            <a class="event pointer">
+                            <a class="event pointer event-js" asp-area="" asp-controller="Events" asp-action="Wedding">
                                 <img class="img-fluid event__image" src="~/assets/images/couple.png" alt="ouverture de bal de mariage" />
-                            <p class="event__title">Ouverture de bal de mariage</p>
+                                <p class="event__title">Ouverture de bal de mariage</p>
+                                <p class="event__title hidden-js hiddenText-js">En savoir plus...</p>
                             </a>
                         </div>
                         <div class="col">
-                            <a class="event pointer">
+                            <a class="event pointer event-js" asp-area="" asp-controller="Events" asp-action="Birthday">
                                 <img class="img-fluid event__image" src="~/assets/images/anniversaire.png" alt="anniversaire" />
-                            <p class="event__title">Anniversaires sportifs</p>
+                                <p class="event__title">Anniversaire sportif</p>
+                                <p class="event__title hidden-js hiddenText-js">En savoir plus...</p>
                             </a>
                         </div>
                     </div>
                 </div>
-
-
                 <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
-                    <div class="btn btn-outline-burgundy m-5">
+                    <div class="btn btn-outline-burgundy ms-5 mb-5">
                         Prendre contact
                     </div>
                 </a>
