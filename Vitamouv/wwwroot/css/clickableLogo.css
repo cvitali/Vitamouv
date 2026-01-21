@@ -39,7 +39,7 @@
 }
 
 .rect__slow:hover {
-    filter: drop-shadow(15px 15px 15px hsl(266.84 16.8% 55.7%)) brightness(115%);
+    filter: drop-shadow(15px 15px 15px hsl(266.9 22.8% 49.8%)) brightness(115%);
 }
 
 .rect__danse:hover {

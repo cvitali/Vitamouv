@@ -3,5 +3,46 @@
 }
 
 <div>
-    <h1>Ouverture de bal de mariage</h1>
+    <div class="heroEvent displayEVent container-fluid">
+        <h1 class="heroEvent__title">Ouverture de bal de mariage</h1>
+        <div class="row row-cols-3">
+            <div class="col">
+                <img class="heroEvent__img img-fluid" src="~/assets/images/couple.png" alt="Couple" />
+            </div>
+            <div class="col">
+                <img class="heroEvent__img img-fluid" src="~/assets/images/couple3.png" alt="Couple" />
+            </div>
+            <div class="col">
+                <img class="heroEvent__img img-fluid" src="~/assets/images/couple2.png" alt="Couple" />
+            </div>
+        </div>
+    </div>
+    <div class="descriptionEvent displayEVent container-fluid mt-5 mb-5">
+        <div class="descriptionEvent__text">
+            Forte d’une expérience reconnue dans l’organisation et la création de spectacles, je vous propose Event’MOUV.
+            <br />
+            <br />
+            Event’MOUV vous ouvre les portes du monde du spectacle et vous accompagne dans la création et la mise en scène de vos événements, qu’ils soient artistiques, sportifs ou festifs.
+            <br />
+            <br />
+            J’ai déjà conçu et coordonné de nombreux spectacles pour  différentes structures, en m’adaptant à chaque contexte et à chaque  public.
+            J’ai notamment participé à la création du spectacle "De la rue aux Jeux Olympique " présenté lors du passage de la flamme olympique à Metz, ainsi qu’à la création de la première partie du spectacle de la Gymnaestrada aux Arènes de Metz.
+            <br />
+            <br />
+            Avec Event’MOUV, je vous accompagne de la conception à la réalisation finale de votre événement: écriture artistique, chorégraphies, mise en scène, coordination et  accompagnement le jour de l’événement, afin de vous offrir un projet  cohérent, fluide et marquant.
+            <div class="contact contactEVents">
+                <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
+                <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
+                    <div class="btn btn-outline-burgundy btnEvent">
+                        Prendre contact
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="socialNetworksandContact socialNetworksandContact__activity">
+        @await Html.PartialAsync("_SocialNetworks&ContactPartial")
+
+    </div>
 </div>

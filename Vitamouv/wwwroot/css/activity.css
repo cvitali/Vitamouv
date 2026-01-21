@@ -56,7 +56,7 @@
 }
 
 
-.event { /*ok*/
+.event { 
     text-decoration: none;
     color: black;
     overflow: hidden;
@@ -68,11 +68,12 @@
         filter: brightness(115%);
     }
 
-.event__image { /*ok*/
+.event__image {
     border-radius: 200px 200px 0 0;
+    border: 5px solid hsl(0 0% 85%)
 }
 
-.event__title { /*ok*/
+.event__title { 
     background-color: hsl(0 0% 85%);
     text-align: center;
 }
@@ -81,7 +82,4 @@
     display: none;   
 }
 
-    .hidden-js:hover {
-        display: block;
-    }
 

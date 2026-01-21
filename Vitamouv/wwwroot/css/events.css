@@ -1,1 +1,57 @@
-﻿
+﻿.displayEVent {
+    width: 85%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.heroEvent {
+   max-width: 82%;
+    background-color: hsla(0 0% 80% / 10%);
+    box-shadow: lightgray 10px 10px 20px;
+}
+
+.heroEvent__title {
+    color: black;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin: 2rem;
+    max-width: 100%;
+}
+
+.heroEvent__img {
+    max-height: 90%;
+}
+
+    .heroEvent__img:hover {
+        filter: brightness(115%);
+    }
+
+.descriptionEvent {
+    max-width: 82%;
+    padding: 5rem;
+    border: 1rem double hsl(60 29.1% 59.6%);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    background-image: url("../assets/images/spectacle.png");
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 5px 5px;
+}
+
+.descriptionEvent__text {
+    background-color: white;
+    padding: 3rem 2rem  2rem 2rem ;
+    border: 1px solid lightgray;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.contactEVents {
+    margin: 2rem;
+}
+
+.btnEvent {
+    margin-top: 2rem;
+}
