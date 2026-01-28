@@ -9,14 +9,14 @@
                 <div class="presentation presentation__activity container-fluid text-center">
                     <div class="presentation__background">
                         <img class="presentation__img img-fluid" src="~/assets/images/dansemouv.png" alt="danseurs" />
-                        <div class="presentation__text container-fluid">
+                        <div class="presentation__text container-fluid border-green">
                             <h2>Danse’MOUV</h2>
                             <h3>Donnez vie à vos mouvements</h3>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="activity bg-lightGreenGradient">
+            <section class="activity bg-lightGreenGradient text-medium">
                 <h3 class="activity__title">Danse'MOUV</h3>
                 <p class="activity__description">
                     Danse’MOUV accompagne les clubs, associations sportives et structures culturelles dans la conception et le développement de chorégraphies adaptées à leurs projets, qu’ils soient compétitifs ou non.
@@ -37,9 +37,9 @@
                     Danse’MOUV, c’est une approche créative, structurée et bienveillante, au service de la performance, de l’expression artistique et de l’identité de votre club.
                     <br />
                     <br />
-                    N'hésitez pas à me contacter pour plus de détails: je me ferai un plaisir de répondre à toutes vos question, par téléphone ou bien au sein de votre structure.
-
+                    Je serais ravie de vous présenter mon concept et de répondre à toutes vos questions lors d’un rendez-vous téléphonique ou dans vos locaux.
                 </p>
+                <h6 class="mt-3 fw-bold">N'hésitez pas à me contacter pour un devis personnalisé:</h6>
                 <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
                     <div class="btn btn-outline-burgundy mt-3">
                         Prendre contact
@@ -47,19 +47,11 @@
                 </a>
             </section>
         </div>
-        <div class="importedClickableLogo">
+        <div class="clickableLogoActivity">
             @await Html.PartialAsync("_ClickableLogoPartial")
         </div>
     </div>
     <div class="socialNetworksandContact socialNetworksandContact__activity">
         @await Html.PartialAsync("_SocialNetworks&ContactPartial")
-        <div class="contact">
-            <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
-            <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
-                <div class="btn btn-outline-burgundy">
-                    Prendre contact
-                </div>
-            </a>
-        </div>
     </div>
 </div>

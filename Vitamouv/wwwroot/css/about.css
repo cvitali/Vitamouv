@@ -1,53 +1,4 @@
-﻿/*A mettre dans site.css si non modifié sur les autres pages*/
-.presentation {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0.5rem 2rem 0.5rem;
-    padding: 1rem;
-    border: 1px solid lightgray;
-    border-radius: 5px 5px;
-    box-shadow: 15px 15px 20px lightgray;
-}
-
-.presentation__background {
-    background-color: hsl(0 0% 96%);
-    border: 1px solid;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    max-height: 80%;
-    width: 80%;
-    border: 1px solid lightgray;
-    border-radius: 5px 5px;
-    box-shadow: 15px 15px 20px lightgray;
-    padding: 1.2rem;
-}
-
-.presentation__img {
-    max-width: 25%;
-    min-width: 150px;
-    border-radius: 5px;
-    position: relative;
-    top: -3rem;
-}
-
-.presentation__text {
-    width: 70%;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    border: 1px solid hsla(331 84% 35%);
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: hsl(331 84% 35%) 1px 1px;
-    position: relative;
-    bottom: calc(100-1rem);
-    box-sizing: content-box;
-}
-/*-----------------------------------------------------------------*/
-.cv {
+﻿.cv {
     text-align: left;
     line-height: 1.5rem;
     margin: 5rem;
@@ -59,4 +10,8 @@
 
 ul.list {
     list-style: square inside;
+}
+
+.clickableLogoAbout {
+    margin-bottom: 25rem;
 }

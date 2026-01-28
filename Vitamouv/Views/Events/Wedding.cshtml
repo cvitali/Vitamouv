@@ -3,7 +3,7 @@
 }
 
 <div>
-    <div class="heroEvent displayEVent container-fluid">
+    <div class="heroEvent displayEVent container-fluid" id="weddingTopPage">
         <h1 class="heroEvent__title">Faites de votre ouverture de bal un moment unique et inoubliable !</h1>
         <div class="row row-cols-3">
             <div class="col">
@@ -18,9 +18,9 @@
         </div>
     </div>
     <div class="descriptionEvent descriptionEvent__wedding displayEVent container-fluid mt-5 mb-5">
-        <div class="descriptionEvent__text textWedding">
+        <div class="descriptionEvent__text">
  
-            <p class="textWedding">
+            <p class="p-sm-0 p-md-2 p-lg-3">
                 Que vous soyez danseurs expérimentés ou débutants,
                 <br />
                 je vous propose des chorégraphies sur-mesure adaptée à votre style
@@ -60,6 +60,11 @@
 
     <div class="socialNetworksandContact socialNetworksandContact__activity">
         @await Html.PartialAsync("_SocialNetworks&ContactPartial")
-
     </div>
+    <a asp-area="" asp-controller="Activities" asp-action="Eventmouv" asp-fragment="eventmouvAncre" title="Revenir à la page Event'MOUV">
+        <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-gauche-64.png" alt="retourner à la page Event'MOUV"/>
+    </a>
+    <a href="#weddingTopPage" title="Revenir à la page Event'MOUV">
+        <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
+    </a>
 </div>

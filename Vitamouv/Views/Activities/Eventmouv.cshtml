@@ -7,21 +7,21 @@
         <div class="main__background bg-lighterPink">
             <section class="mb-5 d-flex justify-content-center m-lg-5">
                 <div class="presentation presentation__activity container-fluid text-center">
-                    <div class="presentation__background">
+                    <div class="presentation__background bg-eventmouv">
                         <img class="presentation__img img-fluid" src="~/assets/images/eventmouv.png" alt="danseurs" />
-                        <div class="presentation__text container-fluid">
+                        <div class="presentation__text container-fluid border-pink">
                             <h2>Event’MOUV</h2>
                             <h3>Donnez vie à vos événements</h3>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="activity__eventmouv bg-lightPinkGradient">
+            <section class="activity__eventmouv bg-lightPinkGradient text-medium" id="eventmouvAncre">
                 <h3 class="activity__title">Event'MOUV</h3>
-                <p class="activity__description">
+                <p class="activity__description px-5">
                     Que ce soit pour un événement publique, une ouverture de bal de mariage ou un anniversaire d’enfant, Event’MOUV vous propose une approche créative, professionnelle et bienveillante, au service d’événements uniques, pensés pour marquer les esprits.
                 </p>
-                <div class="container-fluid my-5">
+                <div class="container-fluid my-5" >
                     <div class="row row-cols-1 row-cols-md-3 g-1 g-lg-3 gy-5">
                         <div class="col">
                             <a class="event pointer event-js" asp-area="" asp-controller="Events" asp-action="EventsCreation">
@@ -46,6 +46,7 @@
                         </div>
                     </div>
                 </div>
+                <h6 class="my-3 fw-bold ps-5">N'hésitez pas à me contacter pour un devis personnalisé:</h6>
                 <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
                     <div class="btn btn-outline-burgundy ms-5 mb-5">
                         Prendre contact
@@ -53,20 +54,12 @@
                 </a>
             </section>
         </div>
-        <div class="importedClickableLogo">
+        <div class="clickableLogoActivity">
             @await Html.PartialAsync("_ClickableLogoPartial")
         </div>
     </div>
     <div class="socialNetworksandContact socialNetworksandContact__activity">
         @await Html.PartialAsync("_SocialNetworks&ContactPartial")
-        <div class="contact">
-            <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
-            <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
-                <div class="btn btn-outline-burgundy">
-                    Prendre contact
-                </div>
-            </a>
-        </div>
     </div>
 </div>
 

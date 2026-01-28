@@ -20,7 +20,7 @@
 .hero {
     margin: 2rem auto 8rem auto;
     font-size: 1.2em;
-    max-width: 80vw;
+    max-width: 80%;
     z-index: 3;
 }
 
@@ -29,7 +29,24 @@
     text-align: left;
     font-size: 1.2em;
     margin: 5rem auto 5rem auto;
-    max-width: 85%;
+    max-width: 80%;
+    text-align: center;
+}
+
+.clickableLogoHome {
+    margin-bottom: 0;
+}
+
+@media (min-width: 650px) {
+    .clickableLogoHome {
+        margin-bottom: 5rem;    
+    }
+}
+
+@media (min-width: 800px) {
+    .clickableLogoHome {
+        margin-bottom: 10rem;
+    }
 }
 
 

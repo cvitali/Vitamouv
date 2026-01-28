@@ -9,14 +9,14 @@
                 <div class="presentation presentation__activity container-fluid text-center">
                     <div class="presentation__background">
                         <img class="presentation__img img-fluid" src="~/assets/images/slowmouv.png" alt="gym douce" />
-                        <div class="presentation__text container-fluid">
+                        <div class="presentation__text container-fluid border-purple">
                             <h2>Slow’MOUV</h2>
                             <h3> Bouger autrement, en douceur et avec plaisir</h3>
                         </div>
                     </div>
                  </div>
             </section>
-            <section class="activity bg-lightPurpleGradient">
+            <section class="activity bg-lightPurpleGradient text-medium">
                 <h3 class="activity__title">Slow'MOUV</h3>
                 <p class="activity__description">
                     Les séances Slow’MOUV sont conçues pour s’adapter à chaque pratiquant,  quel que soit son âge ou sa condition physique. 
@@ -33,6 +33,7 @@
                     <br />
                     Je serais ravie de vous présenter mon concept et de répondre à toutes vos questions lors d’un rendez-vous téléphonique ou dans vos locaux.
                 </p>
+                <h6 class="mt-3 fw-bold">N'hésitez pas à me contacter pour un devis personnalisé:</h6>
                 <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
                     <div class="btn btn-outline-burgundy mt-3">
                         Prendre contact
@@ -40,19 +41,11 @@
                 </a>
             </section>
         </div>
-        <div class="importedClickableLogo">
+        <div class="clickableLogoActivity">
             @await Html.PartialAsync("_ClickableLogoPartial")
         </div>
     </div>
     <div class="socialNetworksandContact socialNetworksandContact__activity">
         @await Html.PartialAsync("_SocialNetworks&ContactPartial")
-        <div class="contact">
-            <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
-            <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
-                <div class="btn btn-outline-burgundy">
-                    Prendre contact
-                </div>
-            </a>
-        </div>
     </div>
 </div>

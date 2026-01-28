@@ -9,14 +9,14 @@
                 <div class="presentation presentation__activity container-fluid text-center">
                     <div class="presentation__background">
                         <img class="presentation__img img-fluid" src="~/assets/images/minimouv.png" alt="enfants" />
-                        <div class="presentation__text container-fluid">
-                            <h2>Mini’MOUV</h2>
+                        <div class="presentation__text container-fluid border-blue">
+                            <h2 class="colorBlue">Mini’MOUV</h2>
                             <h3>Le mouvement au coeur de l’éveil</h3>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="activity bg-lightBlueGradient">
+            <section class="activity bg-lightBlueGradient text-medium">
                 <h3 class="activity__title">Mini'MOUV</h3>
                 <p class="activity__description">
                     Un concept de Baby Gym ludique et bienveillant, pensé pour stimuler le développement moteur et le bien-être des enfants de 6 mois à 5 ans.
@@ -31,9 +31,9 @@
                     <br/>
                     Mini’MOUV transforme le temps d’activité physique en moment de jeu et de découverte tout en accompagnant les professionnels dans la mise en place d’activités adaptées.
                     <br/>
-                    <br/>
                     Je serais ravie de vous présenter mon concept et de répondre à toutes vos questions lors d’un rendez-vous téléphonique ou dans vos locaux.
                 </p>
+                <h6 class="mt-3 fw-bold">N'hésitez pas à me contacter pour un devis personnalisé:</h6>
                 <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
                     <div class="btn btn-outline-burgundy mt-3">
                         Prendre contact
@@ -41,20 +41,12 @@
                 </a>
             </section>   
         </div>
-        <div class="importedClickableLogo">
+        <div class="clickableLogoActivity">
             @await Html.PartialAsync("_ClickableLogoPartial")
         </div>
     </div>
     
     <div class="socialNetworksandContact socialNetworksandContact__activity">
         @await Html.PartialAsync("_SocialNetworks&ContactPartial")
-        <div class="contact">
-            <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
-            <a class="contactBtn" href="mailto:nelly.vitali.57@gmail.com">
-                <div class="btn btn-outline-burgundy">
-                    Prendre contact
-                </div>
-            </a>
-        </div>
     </div>
 </div>

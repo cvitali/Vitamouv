@@ -1,7 +1,4 @@
-html {
-    font-size: 14px;
-    position: relative;
-}
+/*Tailles de polices*/
 
 @media (min-width: 768px) {
   html {
@@ -15,14 +12,41 @@ html {
     }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
 
 /*Couleurs*/
 
 .bg-burgundy {
     background-color:hsl(331 84% 35%) ;
+}
+
+.border-blue {
+    border: 5px double hsl(191 70% 80%);
+    box-shadow: hsl(191 70% 80%) 5px 5px 10px;
+    filter: brightness(110%);
+}
+
+.border-yellow {
+    border: 5px double hsl(48 75% 83%);
+    box-shadow: hsl(48 75% 83%) 5px 5px 10px;
+    filter: brightness(110%);
+}
+
+.border-purple {
+    border: 5px double hsl(268 70% 81%);
+    box-shadow: hsl(268 70% 81%) 5px 5px 10px;
+    filter: brightness(110%);
+}
+
+.border-green {
+    border: 5px double hsl(79 43% 75%);
+    box-shadow: hsl(79 43% 75%) 5px 5px 10px;
+    filter: brightness(110%);
+}
+
+.border-pink {
+    border: 5px double hsl(313 82% 82%);
+    box-shadow: hsl(313 82% 82%) 5px 5px 10px;
+    filter: brightness(110%);
 }
 
 .bg-lightBlueGradient {
@@ -65,15 +89,11 @@ html {
     background-color: hsl(79 43% 75% /15% );
 }
 
-
-    /*------------------------------------------------------------------------------*/
-    .full-width {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
+/*Sections*/
+html {
+    font-size: 14px;
+    position: relative;
+}
 
 body {
     box-sizing: unset;
@@ -94,7 +114,7 @@ body {
    height: auto;
    margin:1rem 0 1rem 0;
    display: relative;
-   padding: 0 0 0 0 
+   padding: 0 0 0 0 ;
 }
 
 .logo__draw {
@@ -129,7 +149,8 @@ body {
 }
 
 .dropdown-item {
-    color:white;
+    background-color: white;
+    color: hsl(331 84% 35%);
 }
 
     .dropdown-item:hover {
@@ -152,7 +173,7 @@ body {
     box-shadow: 5px 5px 10px lightgray;
     padding: 1.2rem;
     width: 80vw;
-    margin: 1rem auto 2rem auto;
+    margin: 1rem auto 8rem auto;
 }
 
     .socialNetworksandContact:hover {
@@ -166,13 +187,32 @@ body {
 
 .footer {
     position: absolute;
-    bottom: -5%;
+    bottom: 0;
     width: 100%;
     height: auto;
     white-space: nowrap;
     line-height: 60px;
     margin-top: 50rem;
     background-color: hsl(331 84% 35%);
+    color: white;
+    line-height: 1.5rem;
+}
+
+.footer__link {
+    color: white;
+}
+
+/*Elements*/
+.full-width {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.text-medium {
+    font-size: 1.2rem;
 }
 
 .pointer {
@@ -183,6 +223,7 @@ body {
     border: 5px double hsl(331 84% 35%);
     color: hsl(331 84% 35%);
     font-weight: 500;
+    position:relative;
     z-index: 8;
 }
 
@@ -191,33 +232,61 @@ body {
         color: white;
     }
 
-.btn-blue {
-    background-color: hsl(191 70% 80%);
-    color: white;
-    font-weight: 500;
-    margin: 2rem;
+.creditPhoto {
+    font-size: clamp(0.2rem,2vw,0.8rem);
+    text-align: left;
+    color: hsl(0 0% 16.1%);
 }
 
-    .btn-blue:hover {
-    
-        border: 1px solid hsl(191 70% 80%);
-        background-color: white;
-        color: hsl(191 70% 80%);
-    }
-
-
-.btn-yellow {
-    background-color: hsl(48 75% 83%);
-    color: white;
-    font-weight: 500;
-    margin: 2rem;
+/*style des pages prestations: mini'mouv, school'mouv, danse'mouv, slow'mouv et event'mouv + about*/
+.presentation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem 2rem 0.5rem;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 5px 5px;
+    box-shadow: 15px 15px 20px lightgray;
 }
 
-    .btn-yellow:hover {
-        border: 1px solid hsl(48 75% 83%);
-        background-color: white;
-        color: hsl(48 75% 83%);
-    }
+.presentation__background {
+    background-color: hsl(0 0% 96%);
+    border: 1px solid;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    height: 80%;
+    width: 80%;
+    border: 1px solid lightgray;
+    border-radius: 5px 5px;
+    box-shadow: 15px 15px 20px lightgray;
+    padding: 1.2rem;
+}
+
+.presentation__img {
+    max-width: 25%;
+    min-width: 150px;
+    border-radius: 5px;
+    position: relative;
+    top: -3rem;
+}
+
+.presentation__text {
+    width: 70%;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: calc(100-1rem);
+    box-sizing: content-box;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+/*-----------------------------------------------------------------*/
+
 
 
 

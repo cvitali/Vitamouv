@@ -3,7 +3,7 @@
 }
 
 <div>
-    <div class="heroEvent displayEVent container-fluid">
+    <div class="heroEvent displayEVent container-fluid" id="eventsTopPage">
         <h1 class="heroEvent__title">Donnez vie à vos événements !</h1>
         <div class="row row-cols-3">
             <div class="col">
@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="descriptionEvent descriptionEvent__publicEvent displayEVent container-fluid mt-5 mb-5">
-        <div class="descriptionEvent__text textPubliEvent">
+        <div class="descriptionEvent__text textPublicEvent">
             Forte d’une expérience reconnue dans l’organisation et la création de spectacles, je vous propose Event’MOUV.
             <br />
             <br />
@@ -42,7 +42,12 @@
     </div>
 
     <div class="socialNetworksandContact socialNetworksandContact__activity">
-        @await Html.PartialAsync("_SocialNetworks&ContactPartial")
-        
+        @await Html.PartialAsync("_SocialNetworks&ContactPartial")   
     </div>
+    <a asp-area="" asp-controller="Activities" asp-action="Eventmouv" asp-fragment="eventmouvAncre" title="Revenir à la page Event'MOUV">
+        <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-gauche-64.png" alt="retourner à la page Event'MOUV" />
+    </a>
+    <a href="#eventsTopPage" title="Revenir à la page Event'MOUV">
+        <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
+    </a>
 </div>
