@@ -24,6 +24,46 @@
     box-shadow: 15px 15px 20px lightgray;
 }
 
+.bg-minimouv {
+    background-image: url("../assets/images/minimouv2.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.bg-schoolmouv {
+    background-image: url("../assets/images/schoolmouv2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.bg-slowmouv {
+    background-image: url("../assets/images/slowmouv2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.bg-dansemouv {
+    background-image: url("../assets/images/dansemouv2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.bg-eventmouv {
+    background-image: url("../assets/images/eventmouv2.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
 .presentation__background {
     background-color: hsl(0 0% 96%);
     border: 1px solid;
@@ -48,12 +88,12 @@
 
 .presentation__text {
     width: 70%;
-    padding: 1.5rem;
+    padding: 0.5rem;
     margin-top: 2rem;
     background-color: white;
     border-radius: 10px;
     position: relative;
-    bottom: calc(100-1rem);
+    bottom: -95%;
     box-sizing: content-box;
     font-size: clamp(1rem, 2vw, 1.5rem);
 }
