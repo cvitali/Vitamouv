@@ -65,14 +65,45 @@
         </main>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            &copy; 2025 - Vita'MOUV - <a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Mentions légales</a>
-            <p>
-                Icônes réseaux sociaux par <a class="text-white" href="https://icons8.com">Icons8</a>
-                <br />
-                Photos par <a class="text-white" href="https://unsplash.com">Unsplash</a>, <a class="text-white" href="https://www.pexels.com">Pexels</a>, <a class="text-white" href="https://fr.freepik.com/">Freepik</a>
-            </p>
+    <footer class="footer container-fluid">
+        <div class="bg-burgundy">
+            <div class="footer__contact">
+                <div class="footer__contactDetail pointer">
+                    <a class="footer__contactDetailLink text-white" href="https://www.google.com/maps/place/Distroff" target="_blank">
+                        <img class="img-fluid footer__img" src="~/assets/icones/icons8-adresse-50.png" alt="localisation" />
+                        57925 Distroff
+                    </a>
+                </div>
+                <div class="footer__contactDetail border-start border-white border-2">
+                    <img class="img-fluid footer__img" src="~/assets/icones/icons8-téléphone-50.png" alt="téléphone" />
+                    06 64 81 68 69
+                </div>
+                <div class="footer__contactDetail pointer border-start border-white border-2">
+                    <a class="footer__contactDetailLink text-white" href="mailto:nelly.vitali.57@gmail.com">
+                        <img class="img-fluid footer__img footer__imgHidden" src="~/assets/icones/icons8-email-50.png" alt="adresse email" />
+                        nelly.vitali.57@gmail.com
+                    </a>
+                </div>
+                <div class="footer__contactDetail pointer border-start border-white border-2">
+                    <a class="footer__contactDetailLink text-white" href="https://m.me/61554690836059" target="_blank">
+                        <img class="img-fluid footer__img" src="~/assets/icones/icons8-facebook-messenger-48.png" alt="facebook messenger" />
+                        Vita'MOUV
+                    </a>
+                </div>
+            </div>
+            <div class="footer__info">
+                &copy; 2025 - Vita'MOUV - <a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Mentions légales</a>
+                <p>
+                    Icônes réseaux sociaux par <a class="text-white" href="https://icons8.com">Icons8</a>
+                    <br />
+                    Photos par <a class="text-white" href="https://unsplash.com">Unsplash</a>, <a class="text-white" href="https://www.pexels.com">Pexels</a>, <a class="text-white" href="https://fr.freepik.com/">Freepik</a>
+                    <br />
+                    Site Web par
+                    <a class="text-white" href="mailto:corinne.wilwert@yahoo.fr">
+                        Corinne VITALI
+                    </a>
+                </p>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
