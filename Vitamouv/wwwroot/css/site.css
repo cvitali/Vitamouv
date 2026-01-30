@@ -14,11 +14,6 @@
 
 
 /*Couleurs*/
-
-.bg-burgundy {
-    background-color:hsl(331 84% 35%) ;
-}
-
 .border-blue {
     border: 5px double hsl(191 70% 80%);
     box-shadow: hsl(191 70% 80%) 5px 5px 10px;
@@ -48,6 +43,21 @@
     box-shadow: hsl(313 82% 82%) 5px 5px 10px;
     filter: brightness(110%);
 }
+
+.border-gray {
+    border: 5px double hsl(331 84% 35%);
+    box-shadow: hsl(0 0% 50.2%) 5px 5px 10px;
+    filter: brightness(110%);
+}
+
+.bg-burgundy {
+    background-color: hsl(331 84% 35%);
+}
+
+.bg-lighterBurgundy {
+    background-color: hsl(331 84% 35% / 15%);
+}
+
 
 .bg-lightBlueGradient {
     background: linear-gradient( hsl(191 70% 80% / 20%), hsl(191 70% 80%));
@@ -173,7 +183,7 @@ body {
     box-shadow: 5px 5px 10px lightgray;
     padding: 1.2rem;
     width: 80vw;
-    margin: 1rem auto 8rem auto;
+    margin: 1rem auto 5rem auto;
 }
 
     .socialNetworksandContact:hover {
@@ -307,14 +317,7 @@ body {
     border-radius: 5px 5px;
     box-shadow: 15px 15px 20px lightgray;
     padding: 1.2rem;
-}
-
-.presentation__img {
-    max-width: 25%;
-    min-width: 150px;
-    border-radius: 5px;
-    position: relative;
-    top: -3rem;
+    box-sizing:content-box;
 }
 
 .presentation__text {

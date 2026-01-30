@@ -2,32 +2,48 @@
     ViewData["Title"] = "A propos";
 }
 
-<div >
-    <div class="mb-5 d-flex justify-content-center m-lg-5">
-        <section class="presentation container-fluid text-center">
-            <div class="presentation__background">
-                <img class="presentation__img img-fluid" src="~/assets/images/portrait.png" alt="portrait" />
-                <p class="presentation__text container-fluid">
-                    Je m’appelle Nelly VITALI et je suis éducatrice sportive spécialisée en Gymnastique rythmique depuis 20 ans.
-                    <br />
-                     Après avoir travaillé de nombreuses années en milieu associatif, j’ai eu envie de développer mon propre concept.
-                    <br />
-                     Aujourd’hui je mets mon expérience au service des collectivités mais aussi des particuliers en proposant des séances adaptées aux besoins de chacun, toujours avec pédagogie et bienveillance.
-                </p>
-            </div>
-        </section>
-    </div>
-    <section class="cv">
-        <h3 class="cv__titre">DIPLÔMES ET FORMATIONS:</h3>
-        <ul class="list">
-            <li cv__listItem>Brevet d’état d’éducatrice sportive, activités gymniques (option gymnastique rythmique)</li>
-            <li cv__listItem>Psychologie de l’enfant de 0 à 6 ans</li>
-            <li cv__listItem>Animateur baby gym, sénior et sport santé</li>
-            <li cv__listItem>Certification aux compétences de maître d’aprentissage</li>
-            <li cv__listItem>Gestion du temps et organisation</li>
-        </ul>
-    </section>
-    <div class="clickableLogoAbout">
-        @await Html.PartialAsync("_ClickableLogoPartial")
+<div class="container w-100">
+    <div class="main__about">
+        <div class="main__background main__backgroundAbout">
+            <section class="mb-5 d-flex justify-content-center">
+                <div class="presentation presentation__activity container-fluid text-center">
+                    <div class="presentation__background bg-about">
+                        <div class="presentation__text container-fluid border-gray">
+                            <h2>A propos de Vita’MOUV...</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cv">
+                <div class="portrait">
+                    <img class="portrait__img img-fluid" src="~/assets/images/portrait.png" alt="portrait" />
+                    <p class="portrait__text">Nelly VITALI, éducatrice sportive passionée, spécialisée en Gymnastique Rythmique depuis 20 ans.</p>
+                </div>
+                <div class="parcours">
+                    <h3 class="cv__titre">MON PARCOURS:</h3>
+                    <p class="text-medium">
+                        Après avoir travaillé de nombreuses années en milieu associatif, j’ai eu envie de développer mon propre concept.
+                        <br />
+                        Aujourd’hui je mets mon expérience au service des collectivités mais aussi des particuliers en proposant des séances adaptées aux besoins de chacun, toujours avec pédagogie et bienveillance.
+                    </p>
+                </div>
+                <div class="parcours">
+                    <h3 class="cv__titre">DIPLÔMES ET FORMATIONS:</h3>
+                    <ul class="list text-medium">
+                        <li cv__listItem>Brevet d’état d’éducatrice sportive, activités gymniques (option gymnastique rythmique)</li>
+                        <li cv__listItem>Psychologie de l’enfant de 0 à 6 ans</li>
+                        <li cv__listItem>Animateur baby gym, sénior et sport santé</li>
+                        <li cv__listItem>Certification aux compétences de maître d’aprentissage</li>
+                        <li cv__listItem>Gestion du temps et organisation</li>
+                    </ul>
+                </div>
+            </section>
+         </div>
+        <div class="clickableLogoAbout">
+            @await Html.PartialAsync("_ClickableLogoPartial")
+        </div>
+        <div class="socialNetworksandContact socialNetworksandContact__about">
+            @await Html.PartialAsync("_SocialNetworks&ContactPartial")
+        </div>
     </div>
 </div>

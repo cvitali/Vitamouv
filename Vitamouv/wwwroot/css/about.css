@@ -1,17 +1,104 @@
-﻿.cv {
-    text-align: left;
-    line-height: 1.5rem;
-    margin: 5rem;
+﻿.main__about {
+    margin: 2rem auto 0 auto;
+    padding: 0.5rem 0 0 0;
+    width: 100%;
 }
+
+.main__backgroundAbout {
+    background-color: hsl(0 0% 82.7 / 15%);
+}
+
+.bg-about {
+    background-image: url("../assets/images/about.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position:inherit;
+    box-sizing: content-box;
+}
+
+.presentation__textAbout {
+    font-weight: bolder;
+    font-size: clamp(2rem, 6vw, 4rem);
+    position: relative;
+    top: 75%;
+}
+
+.parcours {
+    text-align: left;
+    padding: 2rem;
+    
+}
+
+.portrait {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 3rem auto 3rem auto;
+    padding: 1rem;
+    border: 1px solid hsl(331 84% 35%);
+    border-radius: 10px 10px;
+}
+
+@media (max-width: 830px) {
+    .portrait {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.portrait__img {
+    max-width: 25%;
+    min-width: 15rem;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.portrait__text {
+   font-size: clamp(1.5rem, 3vw, 2rem);
+   line-height: 2rem;
+
+}
+
+.cv {
+   text-align: left;
+   line-height: 1.5rem;
+   margin: 5rem;
+   background: linear-gradient(hsl(0 0% 82.7% / 10%),hsl(0 0% 82.7%));
+   padding-top: 2rem;}
 
 .cv__titre {
     margin-bottom: 1.5rem;
 }
+
 
 ul.list {
     list-style: square inside;
 }
 
 .clickableLogoAbout {
-    margin-bottom: 25rem;
+    margin-bottom: 20rem;
+}
+
+@media (max-width: 580px) {
+    .clickableLogoAbout {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .clickableLogoAbout {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .clickableLogoAbout {
+        margin-bottom: 8rem;
+    }
+}
+
+.socialNetworksandContact__about {
+    margin-bottom: 1rem;
+    max-width: 100%;
 }
