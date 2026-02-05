@@ -1,13 +1,13 @@
 ﻿/*style des pages prestations: mini'mouv, school'mouv, danse'mouv et slow'mouv + event'mouv sauf classe activity*/
 .main__activity {
-    margin: 2rem auto 12rem auto;
-    padding: 0.5rem 0 1rem 0;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
     width: 100%;
 }
 
 .main__background {
     max-width: 100%;
-    margin-bottom: 14rem;
+    margin-bottom: 5rem;
     padding:1rem 0 2rem 0; 
 }
 
@@ -126,18 +126,18 @@
 }
 
 .clickableLogoActivity {
-    margin-bottom: 5rem;
+    margin:-20rem auto 1rem auto; 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .clickableLogoActivity {
-        margin: -10rem auto -5rem auto;
+    margin-top: -10rem;
     }
 }
 
 @media (max-width: 500px) {
     .clickableLogoActivity {
-        margin-bottom: -10rem ; 
+
     }
 }
 
@@ -147,52 +147,46 @@
     position: relative;
     top: 10%;
     max-width: 100%;
+    text-align: center;
 }
 
     /*style de la page event'mouv*/
 
-    .activity__eventmouv {
-        margin: 3rem 3rem 6rem 3rem;
-        padding: 0;
-        text-align: left;
-        line-height: 1.5rem;
-        box-shadow: 15px 15px 20px lightgray;
-        box-sizing: border-box;
-    }
-
-    .container__eventlinks {
-        margin-top: 5rem;
-        padding: 0;
-        background-color: yellow;
-    }
+.activity__eventmouv {
+    margin: 3rem 3rem 6rem 3rem;
+    text-align: left;
+    line-height: 1.5rem;
+    box-shadow: 15px 15px 20px lightgray;
+    box-sizing: border-box;
+}    
 
 
-    .event {
-        text-decoration: none;
+.event {
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+
+    .event:hover {
         color: black;
-        overflow: hidden;
-        display: block;
-        width: 100%;
+        filter: brightness(115%);
     }
 
-        .event:hover {
-            color: black;
-            filter: brightness(115%);
-        }
+.event__image {
+    border-radius: 200px 200px 0 0;
+    border: 5px solid hsl(0 0% 85%)
+}
 
-    .event__image {
-        border-radius: 200px 200px 0 0;
-        border: 5px solid hsl(0 0% 85%)
-    }
+.event__title {
+    background-color: hsl(0 0% 85%);
+    text-align: center;
+}
 
-    .event__title {
-        background-color: hsl(0 0% 85%);
-        text-align: center;
-    }
-
-    .hidden-js {
-        display: none;
-    }
+.hidden-js {
+    display: none;
+}    
 
 
 
