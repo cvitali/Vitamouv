@@ -25,9 +25,9 @@
 }
 
 .bg-minimouv {
-    background-image: url("../assets/images/minimouv2.png");
+    background-image: url("../assets/images/minimouv3.png");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     height: 40vh;
 }
