@@ -52,9 +52,9 @@
 }
 
 .descriptionEvent__birthday {
-    background-image: url("../assets/images/fond anniversaire.png");
+    background-image: url("../assets/images/fondanniversaire2.png");
     background-size: cover;
-    background-position: center;
+    background-position: top left;
 }
 
 .descriptionEvent__text {
@@ -77,7 +77,7 @@
 }
 
 .textBirthday {
-    background-color: hsl(0 0% 100% / 78%);
+    background-color: hsl(0 0% 100% / 85%);
     padding-top: 5rem;
     text-align: left;
     padding: 2.5rem;
