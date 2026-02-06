@@ -216,7 +216,7 @@ body {
 
 .footer__contactDetail {
     color: white;
-    width: 25%;
+    line-height: 2.5rem;
     font-size: clamp(0.5rem, 2vw, 1rem);
     text-wrap:auto;
 }
@@ -233,14 +233,6 @@ body {
 .footer__img {
     width: clamp(1.5rem, 5vw, 3rem);
 }
-
-
-@media (max-width: 856px) {
-    .footer__imgHidden {
-        display: none;
-    }
-}
-
 
 .footer__link {
     color: white;
