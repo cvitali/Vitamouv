@@ -161,11 +161,15 @@ body {
 .dropdown-item {
     background-color: white;
     color: hsl(331 84% 35%);
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid hsl(331 84% 35%);
+    font-size: clamp(0.7rem, 1vw, 2rem)
 }
 
     .dropdown-item:hover {
-        background-color: white;
-        color: hsl(331 84% 35%);
+        background-color: hsl(331 84% 35%);
+        color: white;
     }
 
 .main {
@@ -197,7 +201,7 @@ body {
  /*style du footer*/
 .footer {
     position: absolute;
-    bottom: -5%;
+    bottom: -3%;
     transform: translateY(50%);
     width: 100%;
     white-space: nowrap;
