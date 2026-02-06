@@ -1,24 +1,4 @@
-﻿/*.navFrame {
-    height: 60vh;
-    max-width: 50vw;
-    overflow: visible;
-    position: relative;
-    top: -20%;
-    border: 1px solid
-}*/
-
-.navFrame__title {
-   /* margin-top: 2rem;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translate(-55%);*/
-    font-size: 10rem;
-    background-color: yellowgreen;
-    width: 100vw;
-}
-
-.navFrame__logo {
+﻿.navFrame__logo {
     width: 60rem;
     max-width: 95vw;
     position: relative;

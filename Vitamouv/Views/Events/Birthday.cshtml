@@ -2,7 +2,7 @@
     ViewData["Title"] = "Anniversaires sportifs";
 }
 
-<div>
+<div class="container text-center">
     <div class="heroEvent displayEVent container-fluid" id="birthdayTopPage">
         <h1 class="heroEvent__title">Offrez à votre enfant un moment inoubliable !</h1>
         <div class="row row-cols-3">
@@ -25,8 +25,9 @@
             <h4 class="textBirthday__title">Avec Event'MOUV je vous propose une formule anniversaire clé en main.</h4>
             <h5 class="textBirthday__subtitle">Au programme :</h5>
             <ul class="textBirthday__list">
-               <li class="birthdaytextBirthday__listItem">Un atelier créatif</li>
-               <li class="textBirthday__listItem"> Un jeu de piste sur le thème de votre choix : Animaux, sport… je m’adapte aux passions de votre enfant !</li>
+                <li class="textBirthday__listItem">Un atelier créatif</li>
+               <li class="textBirthday__listItem"> Un jeu de piste sur le thème de votre choix : 
+                   <br />Animaux, sport, personnages de dessins animés… je m’adapte aux passions de votre enfant !</li>
            </ul>
             <h5 class="textBirthday__subtitle">🎯 Les enfants devront relever des épreuves ludiques et sportives pour avancer pas à pas jusqu’au trésor :</h5>
             <ul class="textBirthday__list">
@@ -48,7 +49,6 @@
                     </div>
                 </a>
             </div>
-            <p class="creditPhoto">Image de fond par Feepik</p>
         </div>
     </div>
 
@@ -58,7 +58,7 @@
     <a asp-area="" asp-controller="Activities" asp-action="Eventmouv" asp-fragment="eventmouvAncre" title="Revenir à la page Event'MOUV">
         <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-gauche-64.png" alt="retourner à la page Event'MOUV" />
     </a>
-    <a href="#birthdayTopPage" title="Revenir à la page Event'MOUV">
+    <a href="#topPage" title="Revenir en haut de la page">
         <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
     </a>
 </div>
