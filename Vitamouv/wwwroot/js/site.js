@@ -6,19 +6,19 @@ eventLinks.forEach((link) => {
     link.addEventListener("click", () => {
         if (link.classList.contains("rect__mini"))
         {
-            location.href = "../Activities/Minimouv"
+            location.href = "../Prestations/Mini'MOUV"
         }
         if (link.classList.contains("rect__school")) {
-            location.href = "../Activities/Schoolmouv"
+            location.href = "../Prestations/School'MOUV"
         }
         if (link.classList.contains("rect__slow")) {
-            location.href = "../Activities/Slowmouv"
+            location.href = "../Prestations/Slow'MOUV"
         }
         if (link.classList.contains("rect__danse")) {
-            location.href = "../Activities/Dansemouv"
+            location.href = "../Prestations/Danse'MOUV"
         }
         if (link.classList.contains("rect__event")) {
-            location.href = "../Activities/Eventmouv"
+            location.href = "../Prestations/Event'MOUV"
         }
     })
 })

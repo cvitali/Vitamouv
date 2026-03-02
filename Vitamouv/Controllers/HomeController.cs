@@ -18,11 +18,13 @@ namespace Vitamouv.Controllers
             return View();
         }
 
+        [Route("Mentions légales")]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [Route("A propos")]
         public IActionResult About()
         {
             return View();
