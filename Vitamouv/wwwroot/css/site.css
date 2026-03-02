@@ -213,14 +213,15 @@ body {
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
-
 }
 
 .footer__contactDetail {
     color: white;
-    line-height: 2.5rem;
+    line-height: 1rem;
     font-size: clamp(0.5rem, 2vw, 1rem);
-    text-wrap:auto;
+    text-wrap: auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .footer__contactDetailLink {
