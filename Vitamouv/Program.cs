@@ -1,14 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
 //attention: ports ajoutés par Render lors du déploiement mais emp^che le site de fonctionner en local en mode debug
-//ajouter impérativement condition if (builder.Environment.IsProduction()) 
+// =>ajouter impérativement condition if (builder.Environment.IsProduction()) 
 if (builder.Environment.IsProduction())
 {
     var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
     builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 }
-
-
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
