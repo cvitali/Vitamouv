@@ -12,6 +12,10 @@
     }
 }
 
+.text-medium {
+    font-size: 1.2rem;
+}
+
 
 /*Couleurs*/
 .border-blue {
@@ -176,7 +180,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
 }
 
 .socialNetworksandContact {
@@ -249,18 +253,14 @@ body {
     font-weight: 100;
     font-size: small;
 }
-/*-----------------------------------------------------------------------------*/
-/*Elements*/
+
+/*Autres élements de stylisation*/
 .full-width {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
-}
-
-.text-medium {
-    font-size: 1.2rem;
 }
 
 .pointer {
