@@ -40,6 +40,26 @@ events.forEach((event) => {
     })
 })
 
+//flèches pour remonter en haut de page
+
+const arrowsUp = document.querySelectorAll(".arrow-up-js")
+arrowsUp.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior:"instant"
+        })
+    })
+})
+
+//flèches de renvoi vers la page Eventmouv
+
+const arrowsBack = document.querySelectorAll(".arrow-back-js")
+arrowsBack.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+        window.location.assign("./")
+    })
+})
 
 
 
