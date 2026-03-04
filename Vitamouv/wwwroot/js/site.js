@@ -39,3 +39,7 @@ events.forEach((event) => {
         textToShow.classList.add("hidden-js")
     })
 })
+
+
+
+
