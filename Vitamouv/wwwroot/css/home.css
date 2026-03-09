@@ -21,7 +21,7 @@
     margin: 2rem auto 0 auto;
     font-size: 1.2em;
     max-width: 80%;
-    z-index: 3;
+    z-index: 10;
 }
 
 .hero__text2 {
