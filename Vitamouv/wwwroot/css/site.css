@@ -263,6 +263,15 @@ body {
     padding-right: 0;
 }
 
+.activitiLink {
+    font-weight: bolder;
+    color: black;
+}
+
+    .activitiLink:hover {
+        color: hsl(331 84% 35%);
+    }
+
 .pointer {
     cursor: pointer;
 }
