@@ -203,8 +203,8 @@ body {
  /*style du footer*/
 .footer {
     position: absolute;
-    bottom: -5%;
-    transform: translateY(50%);
+    bottom: -8%;
+    transform: translateY(65%);
     width: 100%;
     white-space: nowrap;
     line-height: 60px;
@@ -245,13 +245,35 @@ body {
     color: white;
 }
 
-.footer__info {
+.footer__websiteDetails {
     background-color: hsl(60 9.1% 2.2 / 0.5);
     margin-top: 1rem;
     padding: 1rem;
     color: white;
     font-weight: 100;
     font-size: small;
+    display: block;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    .footer__websiteDetails {
+        font-size: x-small;
+    }
+}
+
+
+.footer__columnTitle {
+    font-size:medium;
+}
+
+.footer__bottom {
+    margin-top: 2rem;
+    text-align:center;
+}
+
+.footer__eventsSublist {
+    padding-left: 2rem;
 }
 
 /*Autres élements de stylisation*/
