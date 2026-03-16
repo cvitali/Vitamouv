@@ -124,23 +124,31 @@ body {
 }
 
 .logo {
-   max-width: 100%;
-   height: auto;
-   margin:1rem 0 1rem 0;
-   display: relative;
-   padding: 0 0 0 0 ;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0 1rem 0;
+    display: relative;
+    padding: 0 0 0 0;
 }
 
-.logo__draw {
+.logo_svg {
     max-width: 100%;
 }
+
+
+@media (max-width: 500px) {
+    .svg__draw {
+    
+    }
+}
+
+
 
 .navbar-nav {
     background-color: hsl(331 84% 35%);
     color: white;
     margin: 0 0 0 0;
     max-width: 100%;
-    
 }
 
 .navbar {
