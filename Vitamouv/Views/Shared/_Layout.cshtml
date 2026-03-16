@@ -23,9 +23,14 @@
 </head>
 <body>
     <header>
+
         <div class="logo container-fluid" id="topPage">
-            <img class="logo__draw" src="~/assets/images/logoFullBlack.svg" />   
+            <picture>
+                <source media="(min-width: 900px)" srcset="~/assets/images/logoFullBlack.svg" />
+                <img class="logo_svg" src="~/assets/images/logo_small.svg">
+            </picture> 
         </div>
+
         <nav class="navbar navbar-dark navbar-expand-sm navbar-toggleable-sm ">
             <div class="container-fluid bg-burgundy">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
