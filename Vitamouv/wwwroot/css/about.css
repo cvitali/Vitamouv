@@ -69,6 +69,10 @@ ul.list {
     list-style: square inside;
 }
 
+.cv__listItemDescription {
+    padding-left: 2rem;
+}
+
 .clickableLogoAbout {
     margin-top: -20rem;
 }
