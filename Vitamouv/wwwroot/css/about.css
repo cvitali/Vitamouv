@@ -5,7 +5,7 @@
 }
 
 .main__backgroundAbout {
-    background-color: hsl(0 0% 82.7 / 15%);
+    background-color: hsl(331 84% 35%/ 5%);
     margin: 0;
 }
 
@@ -48,15 +48,15 @@
 }
 
 .portrait__text {
-   font-size: clamp(1.5rem, 3vw, 2rem);
+   font-size: clamp(1.5rem, 3vw, 1.8rem);
    line-height: 2rem;
 
 }
 
 .cv {
     line-height: 1.5rem;
-    margin: 2rem 0 16rem 0;
-    background: linear-gradient(hsl(0 0% 82.7% / 10%),hsl(0 0% 82.7%));
+    margin: 2rem 1rem 16rem 1rem;
+    background: linear-gradient( hsl(331 84% 35% / 1%), hsl(331 84% 35% / 25%));
     padding-top: 2rem;
 }
 
