@@ -1,3 +1,5 @@
+using Vitamouv.Services.Emails;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //attention: ports ajoutés par Render lors du déploiement mais emp^che le site de fonctionner en local en mode debug
@@ -10,6 +12,11 @@ if (builder.Environment.IsProduction())
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//injection de dépendance pour le service de messagerie
+builder.Services.AddScoped<IEmailService, SendGridEmailService>();
+
+var apiKey = builder.Configuration["SendGrid:ApiKey"];
 
 var app = builder.Build();
 
