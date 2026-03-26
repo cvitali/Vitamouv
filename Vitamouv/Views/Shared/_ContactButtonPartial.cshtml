@@ -6,8 +6,7 @@
     @*fenêtre affichant le formulaire de contact, fermée par défaut et ouverte au click sur le bouton contact*@
     <dialog id="js-modalContactForm">
         <div class="modalContact">
-            <form class="contactForm" method="post" asp-controller="ContactForm" asp-action="Contact">
-                @*sendContactForm => méthode qui va traiter le formulaire*@
+            <form id="contactForm" class="contactForm" asp-controller="ContactForm" asp-action="Contact">
                 <fieldset>
                     <div class="btn-close-white">fermer</div>@*ajouter bouton close ici !*@
                     <legend class="contactForm__Title">Formulaire de contact</legend>

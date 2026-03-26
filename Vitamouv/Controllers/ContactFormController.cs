@@ -44,18 +44,19 @@ namespace Vitamouv.Controllers
                 Message = form.Message
             };
             //communiquer avec le service d'email pour envoyer le message
-            _emailService.SendContactEmail(newEmail);
-            {
-                if (_emailService.SendContactEmail(newEmail).Result == true)
+            var response = _emailService.SendContactEmail(newEmail);
+            
+                if (response.Result == true)
                 {
-                    return Ok(new { message = "formulaire envoyé" });
+                return Ok(new { message = "formulaire envoyé" });
                 }
                 else
                 {
-                    return BadRequest(new { message = "une erreur est survenue lors de l'envoi du formulaire" });
-                }
-                //return PartialView("_ContactButtonPartial", form);
+                return BadRequest(new { message = "une erreur est survenue lors de l'envoi du formulaire" });
             }
+
+        
+
         }
 
     }
