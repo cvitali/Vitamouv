@@ -12,6 +12,10 @@
     }
 }
 
+.text-medium {
+    font-size: 1.2rem;
+}
+
 
 /*Couleurs*/
 .border-blue {
@@ -120,23 +124,31 @@ body {
 }
 
 .logo {
-   max-width: 100%;
-   height: auto;
-   margin:1rem 0 1rem 0;
-   display: relative;
-   padding: 0 0 0 0 ;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0 1rem 0;
+    display: relative;
+    padding: 0 0 0 0;
 }
 
-.logo__draw {
+.logo_svg {
     max-width: 100%;
 }
+
+
+@media (max-width: 500px) {
+    .svg__draw {
+    
+    }
+}
+
+
 
 .navbar-nav {
     background-color: hsl(331 84% 35%);
     color: white;
     margin: 0 0 0 0;
     max-width: 100%;
-    
 }
 
 .navbar {
@@ -176,7 +188,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
 }
 
 .socialNetworksandContact {
@@ -200,8 +212,8 @@ body {
  /*style du footer*/
 .footer {
     position: absolute;
-    bottom: -5%;
-    transform: translateY(50%);
+    bottom: -8%;
+    transform: translateY(65%);
     width: 100%;
     white-space: nowrap;
     line-height: 60px;
@@ -214,14 +226,15 @@ body {
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
-
 }
 
 .footer__contactDetail {
     color: white;
-    line-height: 2.5rem;
+    line-height: 1rem;
     font-size: clamp(0.5rem, 2vw, 1rem);
-    text-wrap:auto;
+    text-wrap: auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .footer__contactDetailLink {
@@ -241,16 +254,38 @@ body {
     color: white;
 }
 
-.footer__info {
+.footer__websiteDetails {
     background-color: hsl(60 9.1% 2.2 / 0.5);
     margin-top: 1rem;
     padding: 1rem;
     color: white;
     font-weight: 100;
     font-size: small;
+    display: block;
+    text-align: left;
 }
-/*-----------------------------------------------------------------------------*/
-/*Elements*/
+
+@media (max-width: 800px) {
+    .footer__websiteDetails {
+        font-size: x-small;
+    }
+}
+
+
+.footer__columnTitle {
+    font-size:medium;
+}
+
+.footer__bottom {
+    margin-top: 2rem;
+    text-align:center;
+}
+
+.footer__eventsSublist {
+    padding-left: 2rem;
+}
+
+/*Autres élements de stylisation*/
 .full-width {
     width: 100%;
     margin-left: 0;
@@ -259,9 +294,14 @@ body {
     padding-right: 0;
 }
 
-.text-medium {
-    font-size: 1.2rem;
+.activitiLink {
+    font-weight: bolder;
+    color: black;
 }
+
+    .activitiLink:hover {
+        color: hsl(331 84% 35%);
+    }
 
 .pointer {
     cursor: pointer;

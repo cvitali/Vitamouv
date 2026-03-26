@@ -1,31 +1,56 @@
 ﻿@{
-    ViewData["Title"] = "Accueil";
+    ViewData["Title"] = "Vita'MOUV: Le sport qui vient à vous !";
+    ViewData["Description"] = "Professeur de gym en Moselle (57). Vita'MOUV, c'est le sport qui vient à vous ! Découvrez mes prestations de gym douce, gym rythmique, baby gym, anniversaires, ouvertures de bals, danse et création d'événements sportifs pour tous les âges et tous les niveaux. Interventions clés en main pour événements privés, crèches, écoles, collectivités, EHPAD, résidences seniors et structures médico sociales en Moselle (57) et au Luxembourg.";
 }
 
-
-
 <div class="main__home text-center">
-    <h1 class="home__title display-4">Bienvenue chez <strong>Vita'MOUV</strong>!</h1>
+    <h1 class="home__title display-4">Bienvenue chez Vita'MOUV !</h1>
     <div class="hero">
         <p class="hero__text">
-            Je suis Nelly Vitali, éducatrice sportive passionnée, créatrice d’expériences de bien-être et de mouvement, et fondatrice de <strong>Vita’MOUV</strong>.
+        Depuis toujours la danse et le sport sont au cœur de ma vie.    
+        <br/>
+        Né de ma passion pour le bien-être et le mouvement, <b>Vita’MOUV</b> propose des activités physiques accessibles à tous, à chaque étape ou événement de la vie.
         <br />
-        Depuis toujours, le mouvement, la danse et le sport sont au cœur de ma vie.    
-        <br/>          
-        Animée par une passion profonde pour l’activité physique, j’ai consacré de nombreuses années à l’enseignement, à l’accompagnement et à la transmission auprès de publics de tous âges en m’appuyant sur mes expériences et mes formations. <br/>
-            Créative, dynamique et à l’écoute, j’ai imaginé <strong>Vita’MOUV</strong> pour proposer des activités physiques pour tous les publics, à chaque étape ou événement de la vie.
+        <br />
+
+
+
         <p>
-    </div>
+            
+            Venez découvrir sans plus attendre mes différentes prestations clé en main à destination des collectivités:
+        </p>
+
+    
+        <ul>
+            <li class="listItemActivity">
+                <a class="activitiLink" href="../Prestations/Mini'MOUV">Mini'MOUV</a>: séances de babygym pour les tout-petits de 6 mois à 5 ans,               
+            </li>
+            <li class="listItemActivity">
+                <a class="activitiLink" href="../Prestations/School'MOUV">School'MOUV</a>: gym et gym rythmique pour enfants à partir de 6 ans,                
+            </li>
+            <li class="listItemActivity">
+                <a class="activitiLink" href="../Prestations/Slow'MOUV">Slow'MOUV</a>: gym douce, sport santé et périnatalité,               
+            </li>
+            <li class="listItemActivity">
+                <a class="activitiLink" href="../Prestations/Danse'MOUV">Danse'MOUV</a>: créations chorégraphiques sur mesure pour clubs, associations sportives et structures culturelles.
+            </li>
+            <p>Enfin, pour donner vie à vos projets d'événements, je vous invite à venir découvrir</p>
+            <li class="listItemActivity">
+                <a class="activitiLink" href="../Prestations/Event'MOUV">Event'MOUV</a>, à destination des collectivité <strong> et des particuliers</strong>: création de spectacles, chorégraphies et animations sur mesure pour événements publics, ouvertures de bals de mariages ou anniversaires d’enfants.
+            </li>
+        </ul>
+        <p>
+            <br />
+            <br />
+            Depuis sa création en Janvier 2023, <b>Vita’MOUV</b> a développé de nombreux parteneriats et je travaille aujourd'hui avec pas moins d’une quarantaine de structures en France et au Luxembourg: crèches, associations, communautés de communes, foyers, périscolaires, etc...
+            <br />
+        </p>
+   <h4 class="homePunchline"> Alors, n’attendez plus: vous aussi rejoignez le mouvement, laissez le sport venir à vous ! </h4>
+        </div>
     <div class="clickableLogoHome">
         @await Html.PartialAsync("_ClickableLogoPartial")
     </div>
-    <div class="hero__text2 text-medium">
-        <p>
-            Depuis sa création en Janvier 2023, <strong>Vita’MOUV</strong> a développé de nombreux parteneriats et travaille déjà avec pas moins d’une quarantaine de structures en France et au Luxembourg: crèches, associations, communautés de communes, foyers, périscolaires, etc...
-            <br />
-            Alors, n’attendez plus: vous aussi rejoignez le mouvement, laissez le sport venir à vous !
-        </p>
-    </div>
+   
     <div class="socialNetworksandContact">
         @await Html.PartialAsync("_SocialNetworks&ContactPartial")
         <div class="contact">
@@ -35,7 +60,5 @@
             </div>
         </div>
     </div>
-    <a href="#topPage" title="Revenir en haut de la page">
-        <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
-    </a>
+    <img class="arrow-up-js" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
 </div>

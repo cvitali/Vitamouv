@@ -1,8 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Anniversaires sportifs";
+    ViewData["Description"] = "Formule anniversaire clé en main avec atelier créatif, jeu de piste et épreuves sportives ludiques. Une approche créative, professionnelle et bienveillante pour offrir un moment unique et adapté à chaque âge. Interventions en Moselle (57) et au Luxembourg. ";
+
 }
 
-<div class="container text-center w-100">
+<div class="container text-center w-100 mb-2 mb-md-4 mb-lg-2">
     <div class="main__activity bg-lighterPink pb-2 mb-5">
         <div class="heroEvent displayEVent container-fluid" id="birthdayTopPage">
             <h1 class="heroEvent__title">Offrez à votre enfant un moment inoubliable !</h1>
@@ -56,10 +58,6 @@
     <div class="socialNetworksandContact socialNetworksandContact__activity">
         @await Html.PartialAsync("_SocialNetworks&ContactPartial")
     </div>
-    <a asp-area="" asp-controller="Activities" asp-action="Eventmouv" asp-fragment="eventmouvAncre" title="Revenir à la page Event'MOUV">
-        <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-gauche-64.png" alt="retourner à la page Event'MOUV" />
-    </a>
-    <a href="#topPage" title="Revenir en haut de la page">
-        <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
-    </a>
+    <img class="pointer arrow-back-js" src="~/assets/icones/icons8-flèche-gauche-64.png" alt="retourner à la page Event'MOUV" title="retourner à la page Event'MOUV" />
+    <img class="pointer arrow-up-js" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
 </div>

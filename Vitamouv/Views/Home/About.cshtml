@@ -4,7 +4,7 @@
 
 <div class="container w-100">
     <div class="main__about">
-        <div class="main__background main__backgroundAbout">
+        <div class="main__backgroundAbout">
             <section class="mb-5 d-flex justify-content-center">
                 <div class="presentation presentation__activity container-fluid text-center">
                     <div class="presentation__background bg-about">
@@ -17,7 +17,13 @@
             <section class="cv">
                 <div class="portrait">
                     <img class="portrait__img img-fluid" src="~/assets/images/portrait.png" alt="portrait" />
-                    <p class="portrait__text">Nelly VITALI, éducatrice sportive passionnée, spécialisée en Gymnastique Rythmique depuis 20 ans.</p>
+                    <p class="portrait__text">
+                        Nelly VITALI, éducatrice sportive passionnée spécialisée en Gymnastique Rythmique.                       
+                        <br /><b>20 ans</b> d'expérience.
+                        <br /> <b>+ de 1000</b> enfants, adultes et séniors accompagnés.
+                        <br /> <b>Double expertise</b>: éducatrice sportive et formatrice d'éducateurs sportifs.
+                        <br /> Déplacements en France et au Luxembourg
+                    </p>
                 </div>
                 <div class="parcours">
                     <h3 class="cv__titre">MON PARCOURS:</h3>
@@ -28,12 +34,73 @@
                     </p>
                 </div>
                 <div class="parcours">
+                    <h3 class="cv__titre">REALISATIONS MARQUANTES:</h3>
+                    <ul class="list text-medium">
+                        <li cv__listItem>
+                            2026: Conception d’un programme pédagogique destiné aux enfants de 2 à 6 ans au <b>Liberty Park</b> de <b>Terville</b>.
+                           
+                        </li>
+                        <li cv__listItem>
+                            2025: Collaboration avec le comité départemental de gymnastique pour la création de la première partie du spectacle
+                            <b>Gymmotion</b> aux <b>Arènes de Metz</b>.
+                           
+                        </li>
+                        <li cv__listItem>
+                            2024: Création d’un spectacle mêlant breakdance et gymnastique à l’occasion du <b>passage de la flamme olympique</b> à <b>Metz</b>.
+                           
+                        </li>
+                        <li cv__listItem>
+                            Depuis 2020: Interventions petite enfance auprès de la <b>Communauté de Communes de l’Arc Mosellan</b> ainsi que dans de nombreuses crèches en <b>France</b> et au <b>Luxembourg</b>.
+                           
+                        </li>
+                        <li cv__listItem>
+                            Depuis 2010: <b>Formatrice</b> pour la <b>Fédération Française de Gymnastique</b> et <b>Campus Format Pro Sport</b> :
+                            <UL>
+                                <Li class="cv__listItemDescription">-Formation d’éducateurs sportifs.</Li>
+                                <Li class="cv__listItemDescription">-Référente petite enfance.</Li>
+                                <Li class="cv__listItemDescription">-Accompagnement et tutorat d’apprentis.</Li>
+                            </UL>
+                        </li>
+                    </ul>
+                </div>
+                <div class="parcours">
+                    <h3 class="cv__titre">AUTRES EXP&EacuteRIENCES PROFESSIONNELLES:</h3>
+                    <ul class="list text-medium">
+                        <li cv__listItem>
+                            2018-2023: Responsable technique petite enfance et loisir
+                            <UL>
+                                <Li >Association Thionvilloise de GRS</Li>
+                            </UL>
+                        </li>
+                        <li cv__listItem>
+                            2010-2023: Formatrice petite enfance, gym sénior et Gymnastique Rythmique
+                            <UL>
+                                <Li >Fédération Française de Gymnastique et Campus Format Pro Sport</Li>
+                            </UL>
+                        </li>
+                        <li cv__listItem>
+                            2010-2018: Educatrice sportive en Gymnastique Rythmique Association
+                            <UL>
+                                <Li >Gymnique Fameckoise</Li>
+                            </UL>
+                        </li>
+                        <li cv__listItem>
+                            2000-2010: Educatrice sportive en Gymnastique Rythmique, animatrice petite enfance et sénior
+                            <UL>
+                                <Li >Olympique Gymnaste Club Nice</Li>
+                                <Li >Association Thionvilloise de Gymnastique Rythmique</Li>
+                                <Li >Association Gymnique Fameckoise</Li>
+                            </UL>
+                        </li>
+                    </ul>
+                </div>
+                <div class="parcours">
                     <h3 class="cv__titre">DIPLÔMES ET FORMATIONS:</h3>
                     <ul class="list text-medium">
                         <li cv__listItem>Brevet d’état d’éducatrice sportive, activités gymniques (option gymnastique rythmique)</li>
                         <li cv__listItem>Psychologie de l’enfant de 0 à 6 ans</li>
                         <li cv__listItem>Animateur baby gym, sénior et sport santé</li>
-                        <li cv__listItem>Certification aux compétences de maître d’aprentissage</li>
+                        <li cv__listItem>Certification aux compétences de maître d’apprentissage</li>
                         <li cv__listItem>Gestion du temps et organisation</li>
                     </ul>
                 </div>
@@ -45,8 +112,8 @@
         <div class="socialNetworksandContact socialNetworksandContact__about">
             @await Html.PartialAsync("_SocialNetworks&ContactPartial")
         </div>
-        <a class="d-flex justify-content-center" href="#topPage" title="Revenir en haut de la page">
-            <img class="backToEventmouv" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
-        </a>
+
+        <img class="mx-auto d-block pointer arrow-up-js" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
+
     </div>
 </div>

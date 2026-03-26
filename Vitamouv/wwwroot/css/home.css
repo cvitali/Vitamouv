@@ -19,18 +19,39 @@
 
 .hero {
     margin: 2rem auto 0 auto;
-    font-size: 1.2em;
-    max-width: 80%;
-    z-index: 3;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 10;
+    max-width: 90%;
 }
 
-.hero__text2 {
-    align-self: start;
-    text-align: left;
-    font-size: 1.2em;
-    margin: 1rem auto 1rem auto;
-    max-width: 80%;
-    text-align: center;
+@media (max-width: 600px) {
+    .hero {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .hero {
+        font-size: 1rem;
+    }
+}
+
+.listItemActivity {
+
+
+}
+
+.homePunchline {
+    color: hsl(331 84% 35%);
+    margin: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .homePunchline {
+        font-size: 1.2rem;
+    }
 }
 
 .clickableLogoHome {
