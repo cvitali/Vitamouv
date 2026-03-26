@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - VITA'MOUV'</title>
-    <meta name="description" content="Cours de gym, Création de spectacles, Organisation d'événements: anniversaires sportifs, ouvertures de bals de mariages..." />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="@ViewData["Descrription"]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="ydvqBHQaBVvL6ZDAMT4PJ0wPaClLuyRorBtF0zY_1oM" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
@@ -24,9 +25,14 @@
 </head>
 <body>
     <header>
+
         <div class="logo container-fluid" id="topPage">
-            <img class="logo__draw" src="~/assets/images/logoFullBlack.svg" />   
+            <picture>
+                <source media="(min-width: 900px)" srcset="~/assets/images/logoFullBlack.svg" />
+                <img class="logo_svg" src="~/assets/images/logo_small.svg">
+            </picture> 
         </div>
+
         <nav class="navbar navbar-dark navbar-expand-sm navbar-toggleable-sm ">
             <div class="container-fluid bg-burgundy">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
@@ -93,19 +99,94 @@
                        Contactez-moi !
                     </div>
                 </div>
-            </div>
-            <div class="footer__info">
-                &copy; 2025 - Vita'MOUV - <a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Mentions légales</a>
-                <p>
-                    Icônes par <a class="text-white" href="https://icons8.com">Icons8</a>
-                    <br />
-                    Photos par <a class="text-white" href="https://unsplash.com">Unsplash</a>, <a class="text-white" href="https://www.pexels.com">Pexels</a>, <a class="text-white" href="https://fr.freepik.com/">Freepik</a>
-                    <br />
-                    Site Web par
+            </div>            
+            <div class="footer__websiteDetails ps-md-3 ps-lg-5">
+                <div class="row w-100">                                                        
+                    <nav aria-label="Navigation secondaire" class="footer__activitiesLinks col-12 col-lg-6 mt-3">
+                        <ul>
+                            <li class="footer__columnTitle">PRESTATIONS</li>
+                            <li>
+                                <a class="text-white" asp-area="" asp-controller="Activities" asp-action="Minimouv">
+                                    Mini'MOUV: baby gym de 6 mois à 5 ans
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-white" asp-area="" asp-controller="Activities" asp-action="Schoolmouv">
+                                    School'MOUV: gym et GR à partir de 6 ans
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-white" asp-area="" asp-controller="Activities" asp-action="Slowmouv">
+                                    Slow'MOUV: gym douce, sport santé, périnatalité
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-white" asp-area="" asp-controller="Activities" asp-action="Dansemouv">
+                                    Danse'MOUV: chorégraphies, enchaînements, expression corporelle
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-white" asp-area="" asp-controller="Activities" asp-action="Eventmouv">
+                                    Event'MOUV: création de spectacles, ouvertures de bals, anniversaires sportifs
+                                </a>
+                                <ul class="footer__eventsSublist">
+                                    <li>
+                                        <a class="text-white" asp-area="" asp-controller="Events" asp-action="EventsCreation">
+                                            Création d'événements
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white" asp-area="" asp-controller="Events" asp-action="Wedding">
+                                            Ouvertures de bals de mariages
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white" asp-area="" asp-controller="Events" asp-action="Birthday">
+                                            Anniversaires sportifs
+                                        </a>
+                                    </li>
+                                </ul>    
+                            </li>
+                        </ul>
+                    </nav> 
+                    <nav aria-label="Navigation secondaire" class="col-6 col-md-3 mt-3">
+                        <ul>
+                            <li class="footer__columnTitle">INFOS</li>
+                            <li>
+                                <a class="text-white" asp-area="" asp-controller="Home" asp-action="Index">
+                                    Accueil
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-white" asp-area="" asp-controller="Home" asp-action="About">
+                                    A propos
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                    Mentions légales
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__copyright col-6 col-md-3 mt-3">
+                        <ul>
+                            <li class="footer__columnTitle">CREDITS</li>
+                            <li>Icônes par <a class="text-white" href="https://icons8.com">Icons8</a></li>
+                            <li>Photos par <a class="text-white" href="https://unsplash.com">Unsplash</a>, <a class="text-white" href="https://www.pexels.com">Pexels</a>, <a class="text-white" href="https://fr.freepik.com/">Freepik</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    &copy; 2025 - Vita'MOUV - 
+                    </br>
+                    Website
                     <a class="text-white" href="mailto:corinne.wilwert@yahoo.fr">
                         Corinne VITALI
                     </a>
-                </p>
+                </div>
             </div>
         </div>
     </footer>

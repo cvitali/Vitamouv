@@ -5,7 +5,7 @@
 }
 
 .main__backgroundAbout {
-    background-color: hsl(0 0% 82.7 / 15%);
+    background-color: hsl(331 84% 35%/ 5%);
     margin: 0;
 }
 
@@ -18,23 +18,15 @@
     box-sizing: content-box;
 }
 
-.presentation__textAbout {
-    font-weight: bolder;
-    font-size: clamp(2rem, 6vw, 4rem);
-    position: relative;
-    top: 75%;
-}
-
 .parcours {
     text-align: left;
-    padding: 2rem;
-    
+    padding: 1.5rem;
 }
 
 .portrait {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 3rem auto 3rem auto;
     padding: 1rem;
     border: 1px solid hsl(331 84% 35%);
@@ -56,17 +48,17 @@
 }
 
 .portrait__text {
-   font-size: clamp(1.5rem, 3vw, 2rem);
+   font-size: clamp(1.5rem, 3vw, 1.8rem);
    line-height: 2rem;
 
 }
 
 .cv {
-   text-align: left;
-   line-height: 1.5rem;
-   margin: 5rem;
-   background: linear-gradient(hsl(0 0% 82.7% / 10%),hsl(0 0% 82.7%));
-   padding-top: 2rem;}
+    line-height: 1.5rem;
+    margin: 2rem 1rem 16rem 1rem;
+    background: linear-gradient( hsl(331 84% 35% / 1%), hsl(331 84% 35% / 25%));
+    padding-top: 2rem;
+}
 
 .cv__titre {
     margin-bottom: 1.5rem;
@@ -75,6 +67,10 @@
 
 ul.list {
     list-style: square inside;
+}
+
+.cv__listItemDescription {
+    padding-left: 2rem;
 }
 
 .clickableLogoAbout {
