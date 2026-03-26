@@ -19,7 +19,7 @@ namespace Vitamouv.Services.Emails
             _configuration = configuration;
         }
 
-        Task<bool> IEmailService.SendContactEmail(ContactEmailModel newEmail)
+        async Task<bool> IEmailService.SendContactEmail(ContactEmailModel newEmail)
         {
             try
             {
@@ -35,14 +35,18 @@ namespace Vitamouv.Services.Emails
                 };
 
                 message.AddTo(new EmailAddress("corinne.wilwert@yahoo.fr"));
-                var response = client.SendEmailAsync(message).Result;
+                var response = await client.SendEmailAsync(message);
 
-                return Task.FromResult(true);
+                //ajout de logs en console pour récupérer les codes erreurs sendGrid
+                Console.WriteLine("SENDGRID STATUS: " + response.StatusCode);
+                Console.WriteLine("SENDGRID BODY: " + await response.Body.ReadAsStringAsync());
+
+                return response.IsSuccessStatusCode;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error sending email: {ex.Message}");
-                return Task.FromResult(false);
+                Console.WriteLine("SENDGRID ERROR: " + ex.ToString());
+                return false;
             }
 
 
