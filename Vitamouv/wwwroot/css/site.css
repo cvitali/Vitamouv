@@ -280,6 +280,20 @@ body {
         color: white;
     }
 
+.btn-outline-gold {
+    border: 5px double hsl(30 50% 65%);
+    background-color: hsl(30 50% 65%);
+    color: white;
+    font-weight: 500;
+    position: relative;
+    z-index: 8;
+}
+
+    .btn-outline-gold:hover {
+        background: linear-gradient(hsl(30 50% 65% / 20%), hsl(30 50% 65%),hsl(30 50% 65% / 20%));
+        color: hsl(30 22.2% 10.6%);
+    }
+
 .creditPhoto {
     font-size: clamp(0.2rem,2vw,0.8rem);
     text-align: left;

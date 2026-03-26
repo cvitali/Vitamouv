@@ -18,6 +18,12 @@ document.getElementById("contactForm").addEventListener("submit", async(e) => {
     const form = e.target
     const data = new FormData(form)
 
+    //on s'assure que le formulaire est correctement rempli avant de l'envoyé
+    //évite à l'api fetch de contourner les dataAnnotations
+    if (!$(form).valid()) {
+        return
+    }
+
     const response = await fetch(form.action,{
         method: "POST",
         body: data
@@ -32,7 +38,12 @@ document.getElementById("contactForm").addEventListener("submit", async(e) => {
         }, 500)
     } else {
         window.alert("Votre message n'a pas pu être envoyé.")
-        const dialog = document.getElementById('js-modalContactForm')
-        dialog.showModal()
+        const result = await response.json();
+        if (result.errors) {
+            // à remplacer par des logs
+            console.log(result.errors.Email);
+        }
+
+        return;
     }
 })

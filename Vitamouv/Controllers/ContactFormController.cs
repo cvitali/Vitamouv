@@ -23,10 +23,20 @@ namespace Vitamouv.Controllers
         [HttpPost]
         public IActionResult Contact(ContactFormViewModel form)
         {
-            //renvoie le formulaire en cas d'erreur
+            //on s'assure que le formulaire est correctement rempli
+            //et on transforme les erreurs de validation MVC en un objet JSON exploitable côté js
             if (!ModelState.IsValid)
             {
-                return PartialView("_ContactButtonPartial", form);
+                return BadRequest(new
+                {
+                    success = false,
+                    errors = ModelState
+                        .Where(x => x.Value.Errors.Count > 0)
+                        .ToDictionary(
+                            kvp => kvp.Key,
+                            kvp => kvp.Value.Errors.Select(e => e.ErrorMessage)
+                        )
+                });
             }
 
             //créer un model d'email à partir du formulaire
@@ -61,8 +71,3 @@ namespace Vitamouv.Controllers
 
     }
 }
-
-//1_récupérer les entrées utilisateurs
-//2_récupérer le model d'email
-//3_CRéer un model d'email
-//  |--> qui sera récupéré par IServiceEmail
