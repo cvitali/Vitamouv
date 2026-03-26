@@ -1,0 +1,66 @@
+﻿@using Vitamouv.Models
+
+@model ContactFormViewModel
+
+<div>
+    @*fenêtre affichant le formulaire de contact, fermée par défaut et ouverte au click sur le bouton contact*@
+    <dialog id="js-modalContactForm">
+        <div class="modalContact">
+            <form id="contactForm" class="contactForm" asp-controller="ContactForm" asp-action="Contact">
+                <fieldset>
+                    <div class="btn-close-white">fermer</div>@*ajouter bouton close ici !*@
+                    <legend class="contactForm__Title">Formulaire de contact</legend>
+                    <div class="contactForm__status">
+                        <h6>Ma demande est pour</h6>
+                        <label for="community">
+                            une collectivité
+                            <input class="js-inputStatus" type="radio" id="community" asp-for="Status" value="collectvité" />
+                        </label>
+                        <label for="person">
+                            un particulier
+                            <input class="js-inputStatus" type="radio" id="person" asp-for="Status" value="particulier" />
+                        </label>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                    <p class="contactForm__info"> * champs obligatoires</p>
+                    <br />
+                    <div class="contactForm__fields">
+                        <label asp-for="FirstName">Prénom *</label>
+                        <input class="contactForm__field" asp-for="FirstName"  />   @*Lie les champs Html a une propriété du model*@
+                        <span asp-validation-for="FirstName" class="text-danger"></span>  @*affiche les erreurs de validation de cette propriété*@
+                        <br />
+                        <label asp-for="LastName">Nom *</label>
+                        <input class="contactForm__field" asp-for="LastName"  />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                        <br />
+                        <label asp-for="Institute">Etablissement</label>
+                        <input class="contactForm__field" asp-for="Institute" />
+                        <span asp-validation-for="Institute" class="text-danger"></span>
+                        <br />
+                        <label asp-for="Town">Localité *</label>
+                        <input class="contactForm__field" asp-for="Town" />
+                        <span asp-validation-for="Town" class="text-danger"></span>
+                        <br />
+                        <label asp-for="Phone">Tel <p class="contactForm__info">(si vous souhaitez être recontacté par téléphone)</p></label>
+                        <input class="contactForm__field" asp-for="Phone"  />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                        <br />
+                        <label asp-for="Email">Email *</label>
+                        <input class="contactForm__field" asp-for="Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <br />
+                        <label asp-for="Subject">Sujet</label>
+                        <input class="contactForm__field" asp-for="Subject" />
+                        <span asp-validation-for="Subject" class="text-danger"></span>
+                        <br />
+                        <label asp-for="Message">Message *</label>
+                        <textarea class="contactForm__field contactForm__message" id="message" asp-for="Message"></textarea>
+                        <span asp-validation-for="Message" class="text-danger"></span>
+                    </div>
+                    <button class="btn-outline-burgundy m-2 js-contactFormSubmit" type="submit">Envoyer</button>
+                </fieldset>
+            </form>
+        </div>
+    </dialog>
+</div>
+

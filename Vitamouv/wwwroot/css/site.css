@@ -208,6 +208,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
  /*style du footer*/
 .footer {
     position: absolute;
@@ -317,6 +318,20 @@ body {
     .btn-outline-burgundy:hover {
         background-color: hsl(331 84% 35%);
         color: white;
+    }
+
+.btn-outline-gold {
+    border: 5px double hsl(30 50% 65%);
+    background-color: hsl(30 50% 65%);
+    color: white;
+    font-weight: 500;
+    position: relative;
+    z-index: 8;
+}
+
+    .btn-outline-gold:hover {
+        background: linear-gradient(hsl(30 50% 65% / 20%), hsl(30 50% 65%),hsl(30 50% 65% / 20%));
+        color: hsl(30 22.2% 10.6%);
     }
 
 .creditPhoto {

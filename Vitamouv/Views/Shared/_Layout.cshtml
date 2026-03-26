@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="~/css/activity.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/events.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/privacy.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/contactForm.css" />
 </head>
 <body>
     <header>
@@ -71,6 +72,7 @@
             @RenderBody()
         </main>
     </div>
+    @await Html.PartialAsync("_ContactButtonPartial")
 
     <footer class="footer container-fluid text-center">
         <div class="bg-burgundy">
@@ -92,10 +94,10 @@
                     </a>
                 </div>
                 <div class="footer__contactDetail pointer border-start border-white border-2 col-12 col-4 col-lg-3">
-                    <a class="footer__contactDetailLink text-white" href="mailto:nelly.vitali.57@gmail.com">
+                    <div class="footer__contactDetailLink text-white js-contactBtn">
                         <img class="img-fluid footer__img" src="~/assets/icones/icons8-email-50.png" alt="adresse email" />
-                        nelly.vitali.57@gmail.com
-                    </a>
+                       Contactez-moi !
+                    </div>
                 </div>
             </div>            
             <div class="footer__websiteDetails ps-md-3 ps-lg-5">
@@ -189,8 +191,11 @@
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script> @*pour la validation du formulaire de contact*@
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script> @*Validation MVC côté client, empêche le submit tant que le formulaire n’est pas valide*@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/ContactForm.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
