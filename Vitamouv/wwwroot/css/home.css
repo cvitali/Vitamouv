@@ -49,5 +49,10 @@
     }
 }
 
+.btn__contactHome {
+    max-width : 15rem;
+    align-self: center;
+}
+
 
 
