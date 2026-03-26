@@ -21,7 +21,7 @@ namespace Vitamouv.Controllers
 
         //récupération des données du formulaire pour créer un model d'email et l'envoyer via le service d'email
         [HttpPost]
-        public IActionResult Contact(ContactFormViewModel form)
+        public async Task<IActionResult> Contact(ContactFormViewModel form)
         {
             //on s'assure que le formulaire est correctement rempli
             //et on transforme les erreurs de validation MVC en un objet JSON exploitable côté js
@@ -54,9 +54,9 @@ namespace Vitamouv.Controllers
                 Message = form.Message
             };
             //communiquer avec le service d'email pour envoyer le message
-            var response = _emailService.SendContactEmail(newEmail);
+            var response = await _emailService.SendContactEmail(newEmail);
             
-                if (response.Result == true)
+                if (response == true)
                 {
                 return Ok(new { message = "formulaire envoyé" });
                 }
@@ -64,10 +64,6 @@ namespace Vitamouv.Controllers
                 {
                 return BadRequest(new { message = "une erreur est survenue lors de l'envoi du formulaire" });
             }
-
-        
-
         }
-
     }
 }
