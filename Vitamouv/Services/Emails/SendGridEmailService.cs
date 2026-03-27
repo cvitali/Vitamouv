@@ -30,11 +30,26 @@ namespace Vitamouv.Services.Emails
                 {
                     From = new EmailAddress("desboiscorin@gmail.com"),
                     ReplyTo = new EmailAddress(newEmail.Email),
-                    Subject = $"{newEmail.Status},{newEmail.Town} - {newEmail.Subject}",
-                    HtmlContent = $"<p>Message de: {newEmail.FirstName} {newEmail.LastName}, {newEmail.Institute}</p><br/><p>Message: <br/>{newEmail.Message}</p><p>Contact: <br/>{newEmail.Email}, {newEmail.Phone}</p>"
+                    Subject = $"{newEmail.Subject}",
+                    HtmlContent = newEmail.Message,
                 };
 
                 message.AddTo(new EmailAddress("corinne.wilwert@yahoo.fr"));
+                message.SetTemplateId("d-851c0f67e5df4ec68a3beef34bcd86f7");
+
+                message.SetTemplateData(new{
+                    subject = newEmail.Subject,
+                    firstname = newEmail.FirstName,
+                    lastname = newEmail.LastName,
+                    statut = newEmail.Status,
+                    institute = newEmail.Institute,
+                    town = newEmail.Town,
+                    message = newEmail.Message,
+                    email = newEmail.Email,
+                    phone = newEmail.Phone,
+                    date = DateTime.Now.ToString("dd/MM/yyyy HH:mm")
+                });
+
                 var response = await client.SendEmailAsync(message);
 
                 //ajout de logs en console pour récupérer les codes erreurs sendGrid

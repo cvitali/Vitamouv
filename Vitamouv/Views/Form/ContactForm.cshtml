@@ -22,3 +22,31 @@
         </form>
     </dialog>
 </div>
+<!---->
+
+<div style="font-family: Arial; padding: 20px;">
+        <h2 style="text-align:center;"><b>Nouveau message du formulaire de contact</b></h2>
+    <div style="padding: 10px; background: #f5f5f5; border-radius: 4px; border: 2px solid hsl(331 84% 35%); margin:15px;">
+        <p><strong>Nom :</strong> {{firstname}}</p>
+        <p><strong>Prénom :</strong> {{lastname}}</p>
+        <p><strong>Statut :</strong> {{statut}}</p>
+        <p><strong>Localité :</strong> {{town}}</p>
+        <p><strong>Etablissement :</strong> {{institute}}</p>
+    </div>
+
+    
+    <div style="padding: 10px; background: #f5f5f5; border-radius: 4px; border: 2px solid hsl(331 84% 35%); margin:15px;">
+        <p><strong>Message :</strong></p> <br>
+        {{message}}
+    </div>
+
+    <div style="padding: 10px; background: #f5f5f5; border-radius: 4px; border: 2px solid hsl(331 84% 35%); margin:15px;">
+        <p><strong>Contact :</strong></p> <br>
+        <p><strong>Email :</strong> {{email}}</p>
+        <p><strong>Tel :</strong> {{phone}}</p>
+    </div>
+
+    <p style="margin-top: 20px; font-size: 12px; color: #888;">
+        Reçu le {{date}}
+    </p>
+</div>
