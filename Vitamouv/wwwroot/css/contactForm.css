@@ -4,13 +4,16 @@
 }
 
 dialog {
-    width: 100%;
+    width: 90%;
+    height: 90%;
     background-color: hsl(0 0% 82.7 / 0.50);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid lightgray;
-    padding: 10rem 2rem 10rem 2rem;
+    padding-top: 2rem;
+    box-sizing: content-box;
+    border: 1px solid hsl(0 2.4% 75.1%);
+    padding-top: 2rem;
 }
 
 .modalContact {
@@ -19,20 +22,27 @@ dialog {
     align-items: center;
     justify-content: center;
     border-radius: 10px 10px;
-    margin-top: 1rem;
-    padding:2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+@media(max-width: 380px){
+    .modalContact {
+        margin-top: 14rem;
+    }
 }
 
 .contactForm {
     padding: 1rem;
     background-color: whitesmoke;
     border-radius: 10px 10px;
+    border: 5px dotted black;
 }
 
 .contactForm__Title {
     text-align: center;
     font-size: 2rem;
-    margin: 2rem auto 2rem auto;
+    margin: 2rem auto 2rem auto
 }
 
 .contactForm__status {
