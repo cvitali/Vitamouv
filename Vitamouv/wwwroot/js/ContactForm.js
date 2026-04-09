@@ -47,3 +47,14 @@ document.getElementById("contactForm").addEventListener("submit", async(e) => {
         return;
     }
 })
+
+//Fermeture du formulaire de contact
+
+const windowToClose = document.getElementById('js-modalContactForm')
+const closeBtn = document.getElementById("js-closeModalContactForm")
+
+if (dialog) {
+    closeBtn.addEventListener("click", () => {
+        windowToClose.close()
+    })
+}
