@@ -25,7 +25,7 @@
 }
 
 .bg-minimouv {
-    background-image: url("../assets/images/minimouv3.png");
+    background-image: url("../assets/images/minimouv3.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 }
 
 .bg-schoolmouv {
-    background-image: url("../assets/images/schoolmouv2.png");
+    background-image: url("../assets/images/schoolmouv2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@
 }
 
 .bg-slowmouv {
-    background-image: url("../assets/images/slowmouv2.png");
+    background-image: url("../assets/images/slowmouv2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@
 }
 
 .bg-dansemouv {
-    background-image: url("../assets/images/dansemouv2.jpg");
+    background-image: url("../assets/images/dansemouvMin.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@
 }
 
 .bg-eventmouv {
-    background-image: url("../assets/images/eventmouv2.png");
+    background-image: url("../assets/images/eventmouvMin.webp");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
