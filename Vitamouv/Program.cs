@@ -14,7 +14,7 @@ if (builder.Environment.IsProduction())
 builder.Services.AddControllersWithViews();
 
 //injection de dépendance pour le service de messagerie
-builder.Services.AddScoped<IEmailService, SendGridEmailService>();
+builder.Services.AddScoped<IEmailService, BrevoEmailService>();
 
 //configuration du HSTS pour les environnements de production
 builder.Services.AddHsts(options =>
@@ -25,7 +25,7 @@ builder.Services.AddHsts(options =>
 });
 
 
-var apiKey = builder.Configuration["SendGrid:ApiKey"];
+var apiKey = builder.Configuration["Brevo:ApiKey"];
 
 var app = builder.Build();
 
