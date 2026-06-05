@@ -9,8 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-proton.pdf
-
+*.proton.pdf
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
