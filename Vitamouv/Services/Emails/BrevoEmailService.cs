@@ -9,20 +9,14 @@ using System.Text.Json;
 namespace Vitamouv.Services.Emails
 {
     //implémentation du service d'email pour envoyer un email de contact
-    public class BrevoEmailService : IEmailService
+    public class BrevoEmailService(IConfiguration configuration) : IEmailService
     {
         //injection de dépendences afin de
         //1_récupérer les secrets dans IConfiguration 
         //2_utiliser HttpClient pour faire des requêtes HTTP à l'API de Brevo
-        private readonly IConfiguration _configuration;
-        private readonly HttpClient _httpClient;
-        private object encoding;
-
-        public BrevoEmailService(IConfiguration configuration)
-        {
-            _configuration = configuration;
-            _httpClient = new HttpClient();
-        }
+        private readonly IConfiguration _configuration = configuration;
+        private readonly HttpClient _httpClient = new HttpClient();
+        private object? encoding;
 
         async Task<bool> IEmailService.SendContactEmail(ContactEmailModel newEmail)
         {
@@ -46,7 +40,7 @@ namespace Vitamouv.Services.Emails
                     },
                     to = new[]
                     {
-                            new {email = "corinne.wilwert@yahoo.fr", name="Corinne Wilwert" }
+                            new {email = "nelly.vitali.57@gmail.com", name="Nelly Vitali" }
                     },
                     subject = $"{newEmail.Subject}",
                     HtmlContent = $@"<html>
