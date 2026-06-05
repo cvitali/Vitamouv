@@ -43,9 +43,9 @@ namespace Vitamouv.Services.Emails
                             new {email = "nelly.vitali.57@gmail.com", name="Nelly Vitali" }
                     },
                     subject = $"{newEmail.Subject}",
-                    HtmlContent = $@"<html>
+                    htmlContent = $@"<html>
                                 <body>
-                                    <h2>Nouveau message pour VITA'MOUV</h2>
+                                    <h2>Nouveau message pour Vita'MOUV</h2>
                                     <p><strong>Nom :</strong> {newEmail.FirstName} {newEmail.LastName}</p>
                                     <p><strong>Email :</strong> {newEmail.Email}</p>
                                     <p><strong>Statut :</strong> {newEmail.Status}</p>
@@ -67,12 +67,52 @@ namespace Vitamouv.Services.Emails
                 var content = new StringContent(jsonPayload, System.Text.Encoding.UTF8, "application/json");
 
                 //envoi de la requête POST à l'API de Brevo
-                _httpClient.DefaultRequestHeaders.Clear();
+                if (_httpClient.DefaultRequestHeaders.Contains("api-key"))
+                    _httpClient.DefaultRequestHeaders.Remove("api-key");
+
                 _httpClient.DefaultRequestHeaders.Add("api-key", apiKey);
 
                 var response = await _httpClient.PostAsync("https://api.brevo.com/v3/smtp/email", content);
 
-                return response.IsSuccessStatusCode;
+                if (response.IsSuccessStatusCode)
+                {
+                    var payloadConfirmation = new
+                    {
+                        sender = new
+                        {
+                            name = "Vitamouv",
+                            email = "admin.vitamouv@proton.me"
+                        },
+                        to = new[]
+                        {
+                        new {email = newEmail.Email }
+                        },
+                        subject = "Merci pour votre message !",
+                        htmlContent = $@"<html>
+                                <body>
+                                    <p>Bonjour {newEmail.FirstName} {newEmail.LastName}</p>
+                                    <br>
+                                    <p>J'ai bien reçu votre message et je vous remercie de votre intérêt.</p>
+                                    <p>Je reviendrai vers vous dans les plus brefs délais.</p>
+                                    <br> 
+                                    <p>Bien cordialement<p>
+                                    <p>Nelly</p>
+                                    <p>Vita'MOUV</p>
+                                </body>
+                            </html>"
+};
+                    var jsonPayloadConfirmation = JsonSerializer.Serialize(payloadConfirmation);
+                    var contentConfirmation = new StringContent(jsonPayloadConfirmation, System.Text.Encoding.UTF8, "application/json");
+
+                    if (_httpClient.DefaultRequestHeaders.Contains("api-key"))
+                        _httpClient.DefaultRequestHeaders.Remove("api-key");
+
+                    _httpClient.DefaultRequestHeaders.Add("api-key", apiKey);
+
+                    var confirmationResponse = await _httpClient.PostAsync("https://api.brevo.com/v3/smtp/email", contentConfirmation);
+                }
+                
+            return response.IsSuccessStatusCode;
             }
             catch (Exception ex)
             {
