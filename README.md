@@ -28,9 +28,15 @@ dotnet run
 
 ## Variables d'environnement
 ```JSON
-"Brevo:ApiKey"=...
+"Brevo:ApiKey"="..."
 ```
 
-🔗 Liens
+## 🔧 Améliorations prévues
+- Amélioration du SEO (en cours)
+- Création d'une interface administrateur.
+- Recueil et affichage des avis clients.
+- Galerie photos avec CRUD complet.
+
+## 🔗 Liens
 - Site : https://vitamouv.fr
 - Repo : https://github.com/cvitali/Vitamouv
