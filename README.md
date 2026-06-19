@@ -33,9 +33,10 @@ dotnet run
 
 ## 🔧 Améliorations prévues
 - Amélioration du SEO (en cours)
-- Création d'une interface administrateur.
-- Recueil et affichage des avis clients.
-- Galerie photos avec CRUD complet.
+- Refonte de la page d'accueil
+- Création d'une interface administrateur
+- Recueil et affichage des avis clients
+- Galerie photos avec CRUD complet
 
 ## 🔗 Liens
 - Site : https://vitamouv.fr
