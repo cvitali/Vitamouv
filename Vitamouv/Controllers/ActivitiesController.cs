@@ -5,14 +5,14 @@ namespace Vitamouv.Controllers
     [Route("Prestations")]
     public class ActivitiesController : Controller
     {
-        [Route("Danse'MOUV")]
-        public IActionResult Dansemouv()
+        [Route("Dance'MOUV")]
+        public IActionResult Dancemouv()
         {
             return View();
         }
 
         [Route("Event'MOUV")]
-        public IActionResult Eventmouv()
+        public IActionResult EventsCreation()
         {
             return View();
         }
@@ -35,5 +35,10 @@ namespace Vitamouv.Controllers
             return View();
         }
 
+        [Route("Animat'MOUV")]
+        public IActionResult Animatmouv()
+        {
+            return View();
+        }
     }
 }

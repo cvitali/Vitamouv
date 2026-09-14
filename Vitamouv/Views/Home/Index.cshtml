@@ -4,43 +4,22 @@
 }
 
 <div class="main__home text-center">
-    <h1 class="home__title display-4">Bienvenue chez Vita'MOUV !</h1>
-    <div class="hero">
-        <p class="hero__text">
-        Depuis toujours la danse et le sport sont au cœur de ma vie.    
-        <br/>
-        Né de ma passion pour le bien-être et le mouvement, <b>Vita’MOUV</b> propose des activités physiques accessibles à tous, à chaque étape ou événement de la vie.
-        <br />
-        <br />
-
-
-
-        <p>
-            
-            Venez découvrir sans plus attendre mes différentes prestations clé en main !<br />
-            A destination des <strong>collectivités</strong>:
-        </p>
-
     
-        <ul>
-            <li class="listItemActivity">
-                <a class="activitiLink" href="../Prestations/Mini'MOUV">Mini'MOUV</a>: séances de babygym pour les tout-petits de 6 mois à 5 ans,               
-            </li>
-            <li class="listItemActivity">
-                <a class="activitiLink" href="../Prestations/School'MOUV">School'MOUV</a>: gym et gym rythmique pour enfants à partir de 6 ans,                
-            </li>
-            <li class="listItemActivity">
-                <a class="activitiLink" href="../Prestations/Slow'MOUV">Slow'MOUV</a>: gym douce, sport santé et périnatalité,               
-            </li>
-            <li class="listItemActivity">
-                <a class="activitiLink" href="../Prestations/Danse'MOUV">Danse'MOUV</a>: créations chorégraphiques sur mesure pour clubs, associations sportives et structures culturelles.
-            </li>
-        </ul>
+    <h1 class="home__title">Bienvenue chez Vita'MOUV !</h1>
+    <h2 class="home__subtitle">Cours de gym, spectacles et animations pour collectivités et particuliers</h2>
+    
+    <div class="hero container text-center">
+        <div class="hero__links row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-sm-3 g-md-5 justify-content-center">
+                <a class="hero__link col" href="../Prestations/Mini'MOUV"><img class="hero__linkImg" src="~/assets/images/home_mini.png"/></a>               
+                <a class="hero__link col" href="../Prestations/Animat'MOUV"><img class="hero__linkImg" src="~/assets/images/home_animat.png"></a>     
+                <a class="hero__link col" href="../Prestations/Dance'MOUV"><img class="hero__linkImg" src="~/assets/images/home_danse.png"></a>            
+                <a class="hero__link col" href="../Prestations/Slow'MOUV"><img class="hero__linkImg" src="~/assets/images/home_slow.png"></a>
+                <a class="hero__link col" href="../Prestations/Event'MOUV"><img class="hero__linkImg" src="~/assets/images/home_event.png"></a>
+                <a class="hero__link col" href="../Prestations/School'MOUV"><img class="hero__linkImg" src="~/assets/images/home_school.png"></a>
+        </div>
         <br />
-            <p>Enfin, pour les <strong>collectivités</strong> et les <strong>particuliers</strong>, venez découvrir</p>
-            <p class="listItemActivity">
-                <a class="activitiLink" href="../Prestations/Event'MOUV">Event'MOUV</a>, pour donner vie à vos projets d'événements: <strong>création de spectacles</strong>, chorégraphies et animations sur mesure pour événements publics, <strong>ouvertures de bals de mariages</strong> ou <strong>anniversaires d’enfants</strong>.
-            </p>
+        <p class="hero__text">
+            
         <p>
             <br />
             Depuis sa création en Janvier 2023, <b>Vita’MOUV</b> a développé de nombreux parteneriats et je travaille aujourd'hui avec pas moins d’une quarantaine de structures en France et au Luxembourg: crèches, associations, communautés de communes, foyers, périscolaires, etc...
@@ -52,7 +31,7 @@
         @await Html.PartialAsync("_ClickableLogoPartial")
     </div>
    
-    <div class="socialNetworksandContact">
+    <div class="socialNetworksandContact socialNetworksandContact__Home">
         @await Html.PartialAsync("_SocialNetworks&ContactPartial")
         <div class="contact">
             <h5 class="mb-3">ou contactez-moi directement:</h5>

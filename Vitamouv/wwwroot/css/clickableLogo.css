@@ -8,8 +8,41 @@
     z-index: 6;
     margin: 0;
 }
+
+@media (min-width: 650px) {
+    .clickableLogoHome > .navFrame__logo {
+        max-width: 60vw;
+    }
+}
+
+@media (min-width: 550px) {
+    .clickableLogoHome > .navFrame__logo {
+        top: 5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .clickableLogoHome > .navFrame__logo {
+        top: 10rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .clickableLogoHome > .navFrame__logo {
+        max-width: 45vw;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .clickableLogoHome > .navFrame__logo {
+        top: 12rem;
+        max-width: 35vw;
+    }
+}
+
 .clickableRect:hover {
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 .rect__mini:hover {

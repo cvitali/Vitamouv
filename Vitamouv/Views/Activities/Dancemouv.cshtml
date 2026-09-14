@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Ouvertures de bals de mariages";
+    ViewData["Description"] = "Création d’ouvertures de bal personnalisées pour mariages. Chorégraphies sur mesure, adaptées à votre niveau et à votre style, pour un moment unique et mémorable. Interventions en Moselle (57) et au Luxembourg.";
+}
+
+<div class="container text-center mb-2 mb-md-4 mb-lg-2">
+    <div class="heroEvent displayEVent container-fluid" id="weddingTopPage">
+        <h1 class="heroEvent__title">Faites de votre ouverture de bal un moment inoubliable !</h1>
+        <div class="row row-cols-3">
+            <div class="col">
+                <img class="heroEvent__img img-fluid" src="~/assets/images/couple.png" alt="Couple" />
+            </div>
+            <div class="col">
+                <img class="heroEvent__img img-fluid" src="~/assets/images/couple3.png" alt="Couple" />
+            </div>
+            <div class="col">
+                <img class="heroEvent__img img-fluid" src="~/assets/images/couple2.png" alt="Couple" />
+            </div>
+        </div>
+    </div>
+    <div class="descriptionEvent descriptionEvent__wedding px-0 px-md-5 px-lg-3 pt-1 pt-sm-5 displayEVent container-fluid mt-5 mb-5">
+        <div class="descriptionEvent__text">
+ 
+            <p>
+                Que vous soyez danseurs expérimentés ou débutants,
+                <br />
+                je vous propose des chorégraphies sur-mesure adaptées à votre style
+                <br />
+                afin que ce moment soit à la hauteur de vos attentes.
+                <br />
+                <br />
+                De la valse traditionnelle à la plus folle des chorégraphies 
+                <br />
+                je crée une performance qui vous ressemble !
+            </p>
+
+            <h4 class="mt-3 mt-1">La prestation inclut:</h4>
+            <ul>
+                <li class="listWedding">Une consultation initiale pour cerner vos envies et attentes.</li>
+                <li class="listWedding">La création d'une chorégraphie sur mesure, adaptée à votre style et à vos goûts musicaux.</li>
+                <li class="listWedding">Le montage audio de votre musique.</li>
+                <li class="listWedding">7 répétitions d'1 heure pour maîtriser chaque mouvement en toute sérénité.</li>
+                <li class="listWedding">1 répétition générale (idéalement sur place, selon disponibilité).</li>
+                <li class="listWedding">Un contact direct avec votre DJ pour la mise en place technique et musicale.</li>
+             </ul>
+             <br />
+             <br />   
+            
+            <img class="iconeMariés" src="~/assets/images/mariés.png" />
+            <div class="contact contactEVents">
+                <p>Le tarif varie en fonction du lieu de déplacement et des besoins particuliers.</p>
+                <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
+                <div class="btn btn-outline-gold js-contactBtn">
+                    Prendre contact
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="socialNetworksandContact socialNetworksandContact__activity">
+        @await Html.PartialAsync("_SocialNetworks&ContactPartial")
+    </div>
+    <img class="pointer arrow-back-js" src="~/assets/icones/icons8-flèche-gauche-64.png" alt="retourner à la page Event'MOUV" title="retourner à la page Event'MOUV" />
+    <img class="pointer arrow-up-js" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
+</div>

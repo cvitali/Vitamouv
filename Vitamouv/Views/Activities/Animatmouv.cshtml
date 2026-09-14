@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Anniversaires sportifs";
+    ViewData["Description"] = "Formule anniversaire clé en main avec atelier créatif, jeu de piste et épreuves sportives ludiques. Une approche créative, professionnelle et bienveillante pour offrir un moment unique et adapté à chaque âge. Interventions en Moselle (57) et au Luxembourg. ";
+
+}
+
+<div class="container text-center w-100 mb-2 mb-md-4 mb-lg-2">
+    <div class="main__activity bg-lighterPink pb-2 mb-5">
+        <div class="heroEvent displayEVent container-fluid" id="birthdayTopPage">
+            <h1 class="heroEvent__title">Offrez à votre enfant un moment inoubliable !</h1>
+            <div class="row row-cols-3">
+                <figure class="col creditPhoto">
+                    <img class="heroEvent__img img-fluid" src="~/assets/images/courseSac.png" alt="gâteau d'aniversaire" />
+                    <figcaption>Photo par Freepik</figcaption>
+                </figure>
+                <figure class="col creditPhoto">
+                    <img class="heroEvent__img img-fluid" src="~/assets/images/anniversaire.png" alt="course en sac" />
+                    <figcaption>Photo par Freepik</figcaption>
+                </figure>
+                <figure class="col creditPhoto">
+                    <img class="heroEvent__img img-fluid" src="~/assets/images/annivEnfant.png" alt="enfant" />
+                    <figcaption>Photo par Freepik</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="descriptionEvent descriptionEvent__birthday displayEVent container-fluid mt-5 mb-5">
+            <div class="textBirthday">
+                <h4 class="textBirthday__title">Avec Animat'MOUV je vous propose une formule anniversaire clé en main.</h4>
+                <h5 class="textBirthday__subtitle">Au programme :</h5>
+                <ul class="textBirthday__list">
+                    <li class="textBirthday__listItem">Un atelier créatif</li>
+                   <li class="textBirthday__listItem"> Un jeu de piste sur le thème de votre choix : 
+                       <br />Animaux, sport, personnages de dessins animés… je m’adapte aux passions de votre enfant !</li>
+               </ul>
+                <h5 class="textBirthday__subtitle">🎯 Les enfants devront relever des épreuves ludiques et sportives pour avancer pas à pas jusqu’au trésor :</h5>
+                <ul class="textBirthday__list">
+                        <li class="textBirthday__listItem">Parcours d’équilibre</li>
+                        <li class="textBirthday__listItem">Course d’obstacles</li>
+                        <li class="textBirthday__listItem">Jeux d’agilité</li>
+                        <li class="textBirthday__listItem">Résolution d'énigme</li>
+                    </ul>
+                <p>…et plein d’autres surprises !
+                    <br />
+                    <br />
+                    Si vous avez la moindre question ou souhaitez personnaliser davantage l’animation, je serai ravie d’en discuter avec vous.
+                </p>
+                <div class="contact contactEVents contactBirthday">
+                    <h5 class="mb-3">N'hésitez pas à me contacter pour un devis personnalisé:</h5>
+                        <div class="btn btn-outline-gold btnEvent js-contactBtn">
+                            Prendre contact
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="socialNetworksandContact socialNetworksandContact__activity">
+        @await Html.PartialAsync("_SocialNetworks&ContactPartial")
+    </div>
+    <img class="pointer arrow-back-js" src="~/assets/icones/icons8-flèche-gauche-64.png" alt="retourner à la page Event'MOUV" title="retourner à la page Event'MOUV" />
+    <img class="pointer arrow-up-js" src="~/assets/icones/icons8-flèche-haut-64.png" alt="retourner en haut de page" />
+</div>

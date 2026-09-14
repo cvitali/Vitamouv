@@ -10,3 +10,30 @@
 .socialNetworkLink:hover {
     transform: translateY(-5px);
 }
+
+
+/*Break points*/
+
+@media (min-width:550px) {
+    .socialNetworksandContact__Home {
+        position: relative;
+        top: 5rem;
+        margin-bottom: 8rem;
+    }
+}
+
+@media (min-width:800px) {
+    .socialNetworksandContact__Home {
+        position: relative;
+        top: 10rem;
+        margin-bottom: 15rem;
+    }
+}
+
+@media (min-width:1400px) {
+    .socialNetworksandContact__Home {
+        position: relative;
+        top: 12rem;
+        margin-bottom: 15rem;
+    }
+}
