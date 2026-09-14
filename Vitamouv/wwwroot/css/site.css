@@ -21,19 +21,17 @@
 .border-blue {
     border: 5px double hsl(191 70% 80%);
     box-shadow: hsl(191 70% 80%) 5px 5px 10px;
-    filter: brightness(110%);
 }
 
 .border-yellow {
-    border: 5px double hsl(48 75% 83%);
-    box-shadow: hsl(48 75% 83%) 5px 5px 10px;
-    filter: brightness(110%);
+    border: 5px double hsl(58.24 85% 60.8%);
+    box-shadow: hsl(58.24 85% 60.8%) 5px 5px 10px;
 }
 
 .border-purple {
     border: 5px double hsl(268 70% 81%);
     box-shadow: hsl(268 70% 81%) 5px 5px 10px;
-    filter: brightness(110%);
+
 }
 
 .border-green {
@@ -72,11 +70,11 @@
 }
 
 .bg-lightYellowGradient {
-    background: linear-gradient( hsl(48 75% 83% /20% ), hsl(48 75% 83% ));
+    background: linear-gradient( hsl(58.24 85% 60.8% /20% ), hsl(58.24 85% 60.8% ));
 }
 
 .bg-lightYellow {
-    background-color: hsl(48 75% 83% / 20% );
+    background-color: hsl(58.24 85% 60.8%/ 20% );
 }
 
 .bg-lightPurpleGradient {
