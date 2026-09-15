@@ -21,19 +21,17 @@
 .border-blue {
     border: 5px double hsl(191 70% 80%);
     box-shadow: hsl(191 70% 80%) 5px 5px 10px;
-    filter: brightness(110%);
 }
 
 .border-yellow {
-    border: 5px double hsl(48 75% 83%);
-    box-shadow: hsl(48 75% 83%) 5px 5px 10px;
-    filter: brightness(110%);
+    border: 5px double hsl(58.24 85% 60.8%);
+    box-shadow: hsl(58.24 85% 60.8%) 5px 5px 10px;
 }
 
 .border-purple {
     border: 5px double hsl(268 70% 81%);
     box-shadow: hsl(268 70% 81%) 5px 5px 10px;
-    filter: brightness(110%);
+
 }
 
 .border-green {
@@ -72,11 +70,11 @@
 }
 
 .bg-lightYellowGradient {
-    background: linear-gradient( hsl(48 75% 83% /20% ), hsl(48 75% 83% ));
+    background: linear-gradient( hsl(58.24 85% 60.8% /20% ), hsl(58.24 85% 60.8% ));
 }
 
 .bg-lightYellow {
-    background-color: hsl(48 75% 83% / 20% );
+    background-color: hsl(58.24 85% 60.8%/ 20% );
 }
 
 .bg-lightPurpleGradient {
@@ -204,183 +202,189 @@ body {
         box-shadow: 5px 5px 30px lightgray;
     }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-}
-
- /*style du footer*/
-.footer {
-    position: absolute;
-    bottom: -8%;
-    transform: translateY(65%);
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px;
-    line-height: 1.5rem;
-    border-top: 1px solid hsl(331 84% 35%);
-    padding: 2rem 0 0 0;
-}
-
-.footer__contact {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1rem;
-}
-
-.footer__contactDetail {
-    color: white;
-    line-height: 1rem;
-    font-size: clamp(0.5rem, 2vw, 1rem);
-    text-wrap: auto;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.footer__contactDetailLink {
-    color: white;
-    text-decoration: none;
-}
-
-    .footer__contactDetailLink:hover {
-        text-decoration: underline;
+    .contact {
+        display: flex;
+        flex-direction: column;
     }
 
-.footer__img {
-    width: clamp(1.5rem, 5vw, 3rem);
-}
-
-.footer__link {
-    color: white;
-}
-
-.footer__websiteDetails {
-    background-color: hsl(60 9.1% 2.2 / 0.5);
-    margin-top: 1rem;
-    padding: 1rem;
-    color: white;
-    font-weight: 100;
-    font-size: small;
-    display: block;
-    text-align: left;
-}
-
-@media (max-width: 800px) {
-    .footer__websiteDetails {
-        font-size: x-small;
-    }
-}
-
-
-.footer__columnTitle {
-    font-size:medium;
-}
-
-.footer__bottom {
-    margin-top: 2rem;
-    text-align:center;
-}
-
-.footer__eventsSublist {
-    padding-left: 2rem;
-}
-
-/*Autres élements de stylisation*/
-.full-width {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.activitiLink {
-    font-weight: bolder;
-    color: black;
-}
-
-    .activitiLink:hover {
-        color: hsl(331 84% 35%);
+    /*style du footer*/
+    .footer {
+        position: absolute;
+        bottom: -8%;
+        transform: translateY(65%);
+        width: 100%;
+        white-space: nowrap;
+        line-height: 60px;
+        line-height: 1.5rem;
+        border-top: 1px solid hsl(331 84% 35%);
+        padding: 2rem 0 0 0;
     }
 
-.pointer {
-    cursor: pointer;
-}
+    @media (min-width: 760px) {
+        .footer {
+            bottom: -10%;
+        }
+    }
 
-.btn-outline-burgundy {
-    border: 5px double hsl(331 84% 35%);
-    color: hsl(331 84% 35%);
-    font-weight: 500;
-    position:relative;
-    z-index: 8;
-}
+    .footer__contact {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1rem;
+    }
 
-    .btn-outline-burgundy:hover {
-        background-color: hsl(331 84% 35%);
+    .footer__contactDetail {
+        color: white;
+        line-height: 1rem;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        text-wrap: auto;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .footer__contactDetailLink {
+        color: white;
+        text-decoration: none;
+    }
+
+        .footer__contactDetailLink:hover {
+            text-decoration: underline;
+        }
+
+    .footer__img {
+        width: clamp(1.5rem, 5vw, 3rem);
+    }
+
+    .footer__link {
         color: white;
     }
 
-.btn-outline-gold {
-    border: 5px double hsl(30 50% 65%);
-    background-color: hsl(30 50% 65%);
-    color: white;
-    font-weight: 500;
-    position: relative;
-    z-index: 8;
-}
-
-    .btn-outline-gold:hover {
-        background: linear-gradient(hsl(30 50% 65% / 20%), hsl(30 50% 65%),hsl(30 50% 65% / 20%));
-        color: hsl(30 22.2% 10.6%);
+    .footer__websiteDetails {
+        background-color: hsl(60 9.1% 2.2 / 0.5);
+        margin-top: 1rem;
+        padding: 1rem;
+        color: white;
+        font-weight: 100;
+        font-size: small;
+        display: block;
+        text-align: left;
     }
 
-.creditPhoto {
-    font-size: clamp(0.2rem,2vw,0.8rem);
-    text-align: left;
-    color: hsl(0 0% 16.1%);
-}
+    @media (max-width: 800px) {
+        .footer__websiteDetails {
+            font-size: x-small;
+        }
+    }
 
-/*style des pages prestations: mini'mouv, school'mouv, danse'mouv, slow'mouv et event'mouv + about*/
-.presentation {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0.5rem 2rem 0.5rem;
-    padding: 1rem;
-    border: 1px solid lightgray;
-    border-radius: 5px 5px;
-    box-shadow: 15px 15px 20px lightgray;
-}
 
-.presentation__background {
-    background-color: hsl(0 0% 96%);
-    border: 1px solid;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    height: 80%;
-    width: 80%;
-    border: 1px solid lightgray;
-    border-radius: 5px 5px;
-    box-shadow: 15px 15px 20px lightgray;
-    padding: 1.2rem;
-    box-sizing:content-box;
-}
+    .footer__columnTitle {
+        font-size: medium;
+    }
 
-.presentation__text {
-    width: 70%;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    position: relative;
-    bottom: calc(100-1rem);
-    box-sizing: content-box;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-}
-/*-----------------------------------------------------------------*/
+    .footer__bottom {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .footer__eventsSublist {
+        padding-left: 2rem;
+    }
+
+    /*Autres élements de stylisation*/
+    .full-width {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .activitiLink {
+        font-weight: bolder;
+        color: black;
+    }
+
+        .activitiLink:hover {
+            color: hsl(331 84% 35%);
+        }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .btn-outline-burgundy {
+        border: 5px double hsl(331 84% 35%);
+        color: hsl(331 84% 35%);
+        font-weight: 500;
+        position: relative;
+        z-index: 8;
+    }
+
+        .btn-outline-burgundy:hover {
+            background-color: hsl(331 84% 35%);
+            color: white;
+        }
+
+    .btn-outline-gold {
+        border: 5px double hsl(30 50% 65%);
+        background-color: hsl(30 50% 65%);
+        color: white;
+        font-weight: 500;
+        position: relative;
+        z-index: 8;
+    }
+
+        .btn-outline-gold:hover {
+            background: linear-gradient(hsl(30 50% 65% / 20%), hsl(30 50% 65%),hsl(30 50% 65% / 20%));
+            color: hsl(30 22.2% 10.6%);
+        }
+
+    .creditPhoto {
+        font-size: clamp(0.2rem,2vw,0.8rem);
+        text-align: left;
+        color: hsl(0 0% 16.1%);
+    }
+
+    /*style des pages prestations: mini'mouv, school'mouv, danse'mouv, slow'mouv et event'mouv + about*/
+    .presentation {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0.5rem 2rem 0.5rem;
+        padding: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 5px 5px;
+        box-shadow: 15px 15px 20px lightgray;
+    }
+
+    .presentation__background {
+        background-color: hsl(0 0% 96%);
+        border: 1px solid;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        height: 80%;
+        width: 80%;
+        border: 1px solid lightgray;
+        border-radius: 5px 5px;
+        box-shadow: 15px 15px 20px lightgray;
+        padding: 1.2rem;
+        box-sizing: content-box;
+    }
+
+    .presentation__text {
+        width: 70%;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        bottom: calc(100-1rem);
+        box-sizing: content-box;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+    /*-----------------------------------------------------------------*/
 
 
 
