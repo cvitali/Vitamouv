@@ -35,7 +35,7 @@
 .bg-schoolmouv {
     background-image: url("../assets/images/schoolmouv3.png");
     background-size: cover;
-    background-position: center;
+    background-position:top;
     background-repeat: no-repeat;
     height: 40vh;
 }

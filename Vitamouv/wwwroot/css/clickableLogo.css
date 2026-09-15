@@ -50,7 +50,7 @@
 }
 
 .rect__school:hover {
-    filter: drop-shadow(15px 15px 15px hsl(48 23.8% 54.7%)) brightness(115%);
+    filter: drop-shadow(15px 15px 15px hsl(48.08 73.6% 58.4%)) brightness(115%);
 }
 
 .rect__slow:hover {
@@ -63,6 +63,10 @@
 
 .rect__event:hover {
     filter: drop-shadow(15px 15px 15px hsl(313.33 30.3% 65.1%)) brightness(115%);
+}
+
+.rect__animat:hover {
+    filter: drop-shadow( 15px 15px 15px hsl(40.53 91.8% 52%)) brightness(115%);
 }
 
 
