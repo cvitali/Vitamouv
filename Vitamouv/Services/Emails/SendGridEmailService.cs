@@ -7,8 +7,6 @@ using Microsoft.Extensions.Configuration;
 namespace Vitamouv.Services.Emails
 {
     //implémentation du service d'email pour envoyer un email de contact
-    //actuellement une implémentation fictive qui affiche les détails de l'email dans la console
-    //dans une application réelle, cette classe pourrait utiliser un service d'email tiers ou un serveur SMTP pour envoyer les emails
     public class SendGridEmailService : IEmailService
     {
         //injection de dépendences afin de récupérer les secrets dans IConfiguration 

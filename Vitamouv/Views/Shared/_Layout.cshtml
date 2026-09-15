@@ -22,9 +22,11 @@
     <link rel="stylesheet" href="~/css/events.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/privacy.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/contactForm.css" />
+    @await Html.PartialAsync("_Favicons")
 </head>
 
 <!-- Google tag (gtag.js) -->
+<!-- Supprimé pour le moment-> nécessite consentement à propos des coockies
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HC5F9ZRBL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -33,6 +35,7 @@
 
   gtag('config', 'G-8HC5F9ZRBL');
 </script>
+-->
 
 <body>
     <header>
@@ -184,10 +187,10 @@
                 <div class="footer__bottom">
                     &copy; 2025 - Vita'MOUV - 
                     </br>
-                    Website
+                    @*Website
                     <a class="text-white" href="mailto:corinne.wilwert@yahoo.fr">
                         Corinne VITALI
-                    </a>
+                    </a>*@
                 </div>
             </div>
         </div>
