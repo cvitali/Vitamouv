@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 650px) {
-    .clickableLogoHome > .navFrame__logo {
+    .clickableLogoHome > .navFrame__logo  {
         max-width: 60vw;
     }
 }
@@ -38,6 +38,10 @@
     .clickableLogoHome > .navFrame__logo {
         top: 12rem;
         max-width: 35vw;
+    }
+    .clickableLogoActivity > .navFrame__logo {
+        top: 8rem;
+        max-width: 45vw;
     }
 }
 

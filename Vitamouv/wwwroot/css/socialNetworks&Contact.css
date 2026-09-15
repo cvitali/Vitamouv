@@ -1,4 +1,8 @@
-﻿.contact {
+﻿.socialNetworksandContact {
+    position: relative;
+}
+
+.contact {
     z-index: 8;
 }
 
@@ -32,8 +36,11 @@
 
 @media (min-width:1400px) {
     .socialNetworksandContact__Home {
-        position: relative;
         top: 12rem;
         margin-bottom: 15rem;
+    }
+    .socialNetworksandContact__activity {
+        bottom: -7rem;
+        margin-bottom: 10rem;
     }
 }
