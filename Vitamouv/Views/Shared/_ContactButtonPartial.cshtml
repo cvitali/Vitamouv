@@ -8,6 +8,7 @@
         <div class="modalContact">
             <form id="contactForm" class="contactForm container-fluid" asp-controller="ContactForm" asp-action="Contact">
                 <fieldset>
+                    <div class="contactForm__close" id="js-closeModalContactForm" title="Quitter le formulaire de contact">X</div>
                     <legend class="contactForm__Title">Formulaire de contact</legend>
                     <div class="contactForm__status">
                         <h6>Ma demande est pour</h6>
@@ -22,6 +23,7 @@
                         <span asp-validation-for="Status" class="text-danger"></span>
                     </div>
                     <p class="contactForm__info"> * champs obligatoires</p>
+                    <p class="contactForm__info"> Les informations saisies sont utilisées uniquement pour répondre à votre message. </p>
                     <br />
                     <div class="contactForm__fields">
                         <label asp-for="FirstName">Prénom *</label>

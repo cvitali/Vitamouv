@@ -10,7 +10,7 @@
 }
 
 .bg-about {
-    background-image: url("../assets/images/about.jpg");
+    background-image: url("../assets/images/about.webp");
     background-size: cover;
     background-position: center;
     height: 40vh;
